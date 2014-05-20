@@ -4,7 +4,7 @@
 #
 package PDL::Finance::Talib;
 
-@EXPORT_OK  = qw( PDL::PP TA_BBANDS PDL::PP TA_DEMA PDL::PP TA_EMA PDL::PP TA_HT_TRENDLINE PDL::PP TA_KAMA PDL::PP TA_MA PDL::PP TA_MAMA PDL::PP TA_MAVP PDL::PP TA_MIDPOINT PDL::PP TA_MIDPRICE PDL::PP TA_SAR PDL::PP TA_SAREXT PDL::PP TA_SMA PDL::PP TA_T3 PDL::PP TA_TEMA PDL::PP TA_TRIMA PDL::PP TA_WMA PDL::PP TA_ATR PDL::PP TA_NATR PDL::PP TA_TRANGE PDL::PP TA_ADX PDL::PP TA_ADXR PDL::PP TA_APO PDL::PP TA_AROON PDL::PP TA_AROONOSC PDL::PP TA_BOP PDL::PP TA_CCI PDL::PP TA_CMO PDL::PP TA_DX PDL::PP TA_MACD PDL::PP TA_MACDEXT PDL::PP TA_MACDFIX PDL::PP TA_MFI PDL::PP TA_MINUS_DI PDL::PP TA_MINUS_DM PDL::PP TA_MOM PDL::PP TA_PLUS_DI PDL::PP TA_PLUS_DM PDL::PP TA_PPO PDL::PP TA_ROC PDL::PP TA_ROCP PDL::PP TA_ROCR PDL::PP TA_ROCR100 PDL::PP TA_RSI PDL::PP TA_STOCH PDL::PP TA_STOCHF PDL::PP TA_STOCHRSI PDL::PP TA_TRIX PDL::PP TA_ULTOSC PDL::PP TA_WILLR PDL::PP TA_HT_DCPERIOD PDL::PP TA_HT_DCPHASE PDL::PP TA_HT_PHASOR PDL::PP TA_HT_SINE PDL::PP TA_HT_TRENDMODE PDL::PP TA_AD PDL::PP TA_ADOSC PDL::PP TA_OBV PDL::PP TA_CDL2CROWS PDL::PP TA_CDL3BLACKCROWS PDL::PP TA_CDL3INSIDE PDL::PP TA_CDL3LINESTRIKE PDL::PP TA_CDL3OUTSIDE PDL::PP TA_CDL3STARSINSOUTH PDL::PP TA_CDL3WHITESOLDIERS PDL::PP TA_CDLABANDONEDBABY PDL::PP TA_CDLADVANCEBLOCK PDL::PP TA_CDLBELTHOLD PDL::PP TA_CDLBREAKAWAY PDL::PP TA_CDLCLOSINGMARUBOZU PDL::PP TA_CDLCONCEALBABYSWALL PDL::PP TA_CDLCOUNTERATTACK PDL::PP TA_CDLDARKCLOUDCOVER PDL::PP TA_CDLDOJI PDL::PP TA_CDLDOJISTAR PDL::PP TA_CDLDRAGONFLYDOJI PDL::PP TA_CDLENGULFING PDL::PP TA_CDLEVENINGDOJISTAR PDL::PP TA_CDLEVENINGSTAR PDL::PP TA_CDLGAPSIDESIDEWHITE PDL::PP TA_CDLGRAVESTONEDOJI PDL::PP TA_CDLHAMMER PDL::PP TA_CDLHANGINGMAN PDL::PP TA_CDLHARAMI PDL::PP TA_CDLHARAMICROSS PDL::PP TA_CDLHIGHWAVE PDL::PP TA_CDLHIKKAKE PDL::PP TA_CDLHIKKAKEMOD PDL::PP TA_CDLHOMINGPIGEON PDL::PP TA_CDLIDENTICAL3CROWS PDL::PP TA_CDLINNECK PDL::PP TA_CDLINVERTEDHAMMER PDL::PP TA_CDLKICKING PDL::PP TA_CDLKICKINGBYLENGTH PDL::PP TA_CDLLADDERBOTTOM PDL::PP TA_CDLLONGLEGGEDDOJI PDL::PP TA_CDLLONGLINE PDL::PP TA_CDLMARUBOZU PDL::PP TA_CDLMATCHINGLOW PDL::PP TA_CDLMATHOLD PDL::PP TA_CDLMORNINGDOJISTAR PDL::PP TA_CDLMORNINGSTAR PDL::PP TA_CDLONNECK PDL::PP TA_CDLPIERCING PDL::PP TA_CDLRICKSHAWMAN PDL::PP TA_CDLRISEFALL3METHODS PDL::PP TA_CDLSEPARATINGLINES PDL::PP TA_CDLSHOOTINGSTAR PDL::PP TA_CDLSHORTLINE PDL::PP TA_CDLSPINNINGTOP PDL::PP TA_CDLSTALLEDPATTERN PDL::PP TA_CDLSTICKSANDWICH PDL::PP TA_CDLTAKURI PDL::PP TA_CDLTASUKIGAP PDL::PP TA_CDLTHRUSTING PDL::PP TA_CDLTRISTAR PDL::PP TA_CDLUNIQUE3RIVER PDL::PP TA_CDLUPSIDEGAP2CROWS PDL::PP TA_CDLXSIDEGAP3METHODS PDL::PP TA_BETA PDL::PP TA_CORREL PDL::PP TA_LINEARREG PDL::PP TA_LINEARREG_ANGLE PDL::PP TA_LINEARREG_INTERCEPT PDL::PP TA_LINEARREG_SLOPE PDL::PP TA_STDDEV PDL::PP TA_TSF PDL::PP TA_VAR PDL::PP TA_AVGPRICE PDL::PP TA_MEDPRICE PDL::PP TA_TYPPRICE PDL::PP TA_WCLPRICE );
+@EXPORT_OK  = qw( PDL::PP ta_bbands PDL::PP ta_dema PDL::PP ta_ema PDL::PP ta_ht_trendline PDL::PP ta_kama PDL::PP ta_ma PDL::PP ta_mama PDL::PP ta_mavp PDL::PP ta_midpoint PDL::PP ta_midprice PDL::PP ta_sar PDL::PP ta_sarext PDL::PP ta_sma PDL::PP ta_t3 PDL::PP ta_tema PDL::PP ta_trima PDL::PP ta_wma PDL::PP ta_atr PDL::PP ta_natr PDL::PP ta_trange PDL::PP ta_adx PDL::PP ta_adxr PDL::PP ta_apo PDL::PP ta_aroon PDL::PP ta_aroonosc PDL::PP ta_bop PDL::PP ta_cci PDL::PP ta_cmo PDL::PP ta_dx PDL::PP ta_macd PDL::PP ta_macdext PDL::PP ta_macdfix PDL::PP ta_mfi PDL::PP ta_minus_di PDL::PP ta_minus_dm PDL::PP ta_mom PDL::PP ta_plus_di PDL::PP ta_plus_dm PDL::PP ta_ppo PDL::PP ta_roc PDL::PP ta_rocp PDL::PP ta_rocr PDL::PP ta_rocr100 PDL::PP ta_rsi PDL::PP ta_stoch PDL::PP ta_stochf PDL::PP ta_stochrsi PDL::PP ta_trix PDL::PP ta_ultosc PDL::PP ta_willr PDL::PP ta_ht_dcperiod PDL::PP ta_ht_dcphase PDL::PP ta_ht_phasor PDL::PP ta_ht_sine PDL::PP ta_ht_trendmode PDL::PP ta_ad PDL::PP ta_adosc PDL::PP ta_obv PDL::PP ta_cdl2crows PDL::PP ta_cdl3blackcrows PDL::PP ta_cdl3inside PDL::PP ta_cdl3linestrike PDL::PP ta_cdl3outside PDL::PP ta_cdl3starsinsouth PDL::PP ta_cdl3whitesoldiers PDL::PP ta_cdlabandonedbaby PDL::PP ta_cdladvanceblock PDL::PP ta_cdlbelthold PDL::PP ta_cdlbreakaway PDL::PP ta_cdlclosingmarubozu PDL::PP ta_cdlconcealbabyswall PDL::PP ta_cdlcounterattack PDL::PP ta_cdldarkcloudcover PDL::PP ta_cdldoji PDL::PP ta_cdldojistar PDL::PP ta_cdldragonflydoji PDL::PP ta_cdlengulfing PDL::PP ta_cdleveningdojistar PDL::PP ta_cdleveningstar PDL::PP ta_cdlgapsidesidewhite PDL::PP ta_cdlgravestonedoji PDL::PP ta_cdlhammer PDL::PP ta_cdlhangingman PDL::PP ta_cdlharami PDL::PP ta_cdlharamicross PDL::PP ta_cdlhighwave PDL::PP ta_cdlhikkake PDL::PP ta_cdlhikkakemod PDL::PP ta_cdlhomingpigeon PDL::PP ta_cdlidentical3crows PDL::PP ta_cdlinneck PDL::PP ta_cdlinvertedhammer PDL::PP ta_cdlkicking PDL::PP ta_cdlkickingbylength PDL::PP ta_cdlladderbottom PDL::PP ta_cdllongleggeddoji PDL::PP ta_cdllongline PDL::PP ta_cdlmarubozu PDL::PP ta_cdlmatchinglow PDL::PP ta_cdlmathold PDL::PP ta_cdlmorningdojistar PDL::PP ta_cdlmorningstar PDL::PP ta_cdlonneck PDL::PP ta_cdlpiercing PDL::PP ta_cdlrickshawman PDL::PP ta_cdlrisefall3methods PDL::PP ta_cdlseparatinglines PDL::PP ta_cdlshootingstar PDL::PP ta_cdlshortline PDL::PP ta_cdlspinningtop PDL::PP ta_cdlstalledpattern PDL::PP ta_cdlsticksandwich PDL::PP ta_cdltakuri PDL::PP ta_cdltasukigap PDL::PP ta_cdlthrusting PDL::PP ta_cdltristar PDL::PP ta_cdlunique3river PDL::PP ta_cdlupsidegap2crows PDL::PP ta_cdlxsidegap3methods PDL::PP ta_beta PDL::PP ta_correl PDL::PP ta_linearreg PDL::PP ta_linearreg_angle PDL::PP ta_linearreg_intercept PDL::PP ta_linearreg_slope PDL::PP ta_stddev PDL::PP ta_tsf PDL::PP ta_var PDL::PP ta_avgprice PDL::PP ta_medprice PDL::PP ta_typprice PDL::PP ta_wclprice );
 %EXPORT_TAGS = (Func=>[@EXPORT_OK]);
 
 use PDL::Core;
@@ -13,7 +13,7 @@ use DynaLoader;
 
 
 
-   $PDL::Finance::Talib::VERSION = 0.003;
+   $PDL::Finance::Talib::VERSION = 0.004;
    @ISA    = ( 'PDL::Exporter','DynaLoader' );
    push @PDL::Core::PP, __PACKAGE__;
    bootstrap PDL::Finance::Talib $VERSION;
@@ -38,8 +38,8 @@ PDL::Finance::Talib - Technical Analysis Library (http://ta-lib.org) bindings fo
  my $volume = ... ; # 1D piddle
 
  my $period = 20;
- my $moving_average = TA_SMA($close, $period);
- my $money_flow_index = TA_MFI($high, $low, $close, $volume, $period);
+ my $moving_average = ta_sma($close, $period);
+ my $money_flow_index = ta_mfi($high, $low, $close, $volume, $period);
  # both $moving_average and $money_flow_index are 1D piddles
 
 =head1 DESCRIPTION
@@ -58,35 +58,35 @@ data sets and if you generally do not worry about performace).
 
 =head2 Group: Overlap Studies
 
-L<TA_BBANDS|/TA_BBANDS> (Bollinger Bands), L<TA_DEMA|/TA_DEMA> (Double Exponential Moving Average), L<TA_EMA|/TA_EMA> (Exponential Moving Average), L<TA_HT_TRENDLINE|/TA_HT_TRENDLINE> (Hilbert Transform - Instantaneous Trendline), L<TA_KAMA|/TA_KAMA> (Kaufman Adaptive Moving Average), L<TA_MA|/TA_MA> (Moving average), L<TA_MAMA|/TA_MAMA> (MESA Adaptive Moving Average), L<TA_MAVP|/TA_MAVP> (Moving average with variable period), L<TA_MIDPOINT|/TA_MIDPOINT> (MidPoint over period), L<TA_MIDPRICE|/TA_MIDPRICE> (Midpoint Price over period), L<TA_SAR|/TA_SAR> (Parabolic SAR), L<TA_SAREXT|/TA_SAREXT> (Parabolic SAR - Extended), L<TA_SMA|/TA_SMA> (Simple Moving Average), L<TA_T3|/TA_T3> (Triple Exponential Moving Average (T3)), L<TA_TEMA|/TA_TEMA> (Triple Exponential Moving Average), L<TA_TRIMA|/TA_TRIMA> (Triangular Moving Average), L<TA_WMA|/TA_WMA> (Weighted Moving Average)
+L<ta_bbands|/ta_bbands> (Bollinger Bands), L<ta_dema|/ta_dema> (Double Exponential Moving Average), L<ta_ema|/ta_ema> (Exponential Moving Average), L<ta_ht_trendline|/ta_ht_trendline> (Hilbert Transform - Instantaneous Trendline), L<ta_kama|/ta_kama> (Kaufman Adaptive Moving Average), L<ta_ma|/ta_ma> (Moving average), L<ta_mama|/ta_mama> (MESA Adaptive Moving Average), L<ta_mavp|/ta_mavp> (Moving average with variable period), L<ta_midpoint|/ta_midpoint> (MidPoint over period), L<ta_midprice|/ta_midprice> (Midpoint Price over period), L<ta_sar|/ta_sar> (Parabolic SAR), L<ta_sarext|/ta_sarext> (Parabolic SAR - Extended), L<ta_sma|/ta_sma> (Simple Moving Average), L<ta_t3|/ta_t3> (Triple Exponential Moving Average (T3)), L<ta_tema|/ta_tema> (Triple Exponential Moving Average), L<ta_trima|/ta_trima> (Triangular Moving Average), L<ta_wma|/ta_wma> (Weighted Moving Average)
 
 =head2 Group: Volatility Indicators
 
-L<TA_ATR|/TA_ATR> (Average True Range), L<TA_NATR|/TA_NATR> (Normalized Average True Range), L<TA_TRANGE|/TA_TRANGE> (True Range)
+L<ta_atr|/ta_atr> (Average True Range), L<ta_natr|/ta_natr> (Normalized Average True Range), L<ta_trange|/ta_trange> (True Range)
 
 =head2 Group: Momentum Indicators
 
-L<TA_ADX|/TA_ADX> (Average Directional Movement Index), L<TA_ADXR|/TA_ADXR> (Average Directional Movement Index Rating), L<TA_APO|/TA_APO> (Absolute Price Oscillator), L<TA_AROON|/TA_AROON> (Aroon), L<TA_AROONOSC|/TA_AROONOSC> (Aroon Oscillator), L<TA_BOP|/TA_BOP> (Balance Of Power), L<TA_CCI|/TA_CCI> (Commodity Channel Index), L<TA_CMO|/TA_CMO> (Chande Momentum Oscillator), L<TA_DX|/TA_DX> (Directional Movement Index), L<TA_MACD|/TA_MACD> (Moving Average Convergence/Divergence), L<TA_MACDEXT|/TA_MACDEXT> (MACD with controllable MA type), L<TA_MACDFIX|/TA_MACDFIX> (Moving Average Convergence/Divergence Fix 12/26), L<TA_MFI|/TA_MFI> (Money Flow Index), L<TA_MINUS_DI|/TA_MINUS_DI> (Minus Directional Indicator), L<TA_MINUS_DM|/TA_MINUS_DM> (Minus Directional Movement), L<TA_MOM|/TA_MOM> (Momentum), L<TA_PLUS_DI|/TA_PLUS_DI> (Plus Directional Indicator), L<TA_PLUS_DM|/TA_PLUS_DM> (Plus Directional Movement), L<TA_PPO|/TA_PPO> (Percentage Price Oscillator), L<TA_ROC|/TA_ROC> (Rate of change : ((price/prevPrice)-1)*100), L<TA_ROCP|/TA_ROCP> (Rate of change Percentage: (price-prevPrice)/prevPrice), L<TA_ROCR|/TA_ROCR> (Rate of change ratio: (price/prevPrice)), L<TA_ROCR100|/TA_ROCR100> (Rate of change ratio 100 scale: (price/prevPrice)*100), L<TA_RSI|/TA_RSI> (Relative Strength Index), L<TA_STOCH|/TA_STOCH> (Stochastic), L<TA_STOCHF|/TA_STOCHF> (Stochastic Fast), L<TA_STOCHRSI|/TA_STOCHRSI> (Stochastic Relative Strength Index), L<TA_TRIX|/TA_TRIX> (1-day Rate-Of-Change (ROC) of a Triple Smooth EMA), L<TA_ULTOSC|/TA_ULTOSC> (Ultimate Oscillator), L<TA_WILLR|/TA_WILLR> (Williams' %R)
+L<ta_adx|/ta_adx> (Average Directional Movement Index), L<ta_adxr|/ta_adxr> (Average Directional Movement Index Rating), L<ta_apo|/ta_apo> (Absolute Price Oscillator), L<ta_aroon|/ta_aroon> (Aroon), L<ta_aroonosc|/ta_aroonosc> (Aroon Oscillator), L<ta_bop|/ta_bop> (Balance Of Power), L<ta_cci|/ta_cci> (Commodity Channel Index), L<ta_cmo|/ta_cmo> (Chande Momentum Oscillator), L<ta_dx|/ta_dx> (Directional Movement Index), L<ta_macd|/ta_macd> (Moving Average Convergence/Divergence), L<ta_macdext|/ta_macdext> (MACD with controllable MA type), L<ta_macdfix|/ta_macdfix> (Moving Average Convergence/Divergence Fix 12/26), L<ta_mfi|/ta_mfi> (Money Flow Index), L<ta_minus_di|/ta_minus_di> (Minus Directional Indicator), L<ta_minus_dm|/ta_minus_dm> (Minus Directional Movement), L<ta_mom|/ta_mom> (Momentum), L<ta_plus_di|/ta_plus_di> (Plus Directional Indicator), L<ta_plus_dm|/ta_plus_dm> (Plus Directional Movement), L<ta_ppo|/ta_ppo> (Percentage Price Oscillator), L<ta_roc|/ta_roc> (Rate of change : ((price/prevPrice)-1)*100), L<ta_rocp|/ta_rocp> (Rate of change Percentage: (price-prevPrice)/prevPrice), L<ta_rocr|/ta_rocr> (Rate of change ratio: (price/prevPrice)), L<ta_rocr100|/ta_rocr100> (Rate of change ratio 100 scale: (price/prevPrice)*100), L<ta_rsi|/ta_rsi> (Relative Strength Index), L<ta_stoch|/ta_stoch> (Stochastic), L<ta_stochf|/ta_stochf> (Stochastic Fast), L<ta_stochrsi|/ta_stochrsi> (Stochastic Relative Strength Index), L<ta_trix|/ta_trix> (1-day Rate-Of-Change (ROC) of a Triple Smooth EMA), L<ta_ultosc|/ta_ultosc> (Ultimate Oscillator), L<ta_willr|/ta_willr> (Williams' %R)
 
 =head2 Group: Cycle Indicators
 
-L<TA_HT_DCPERIOD|/TA_HT_DCPERIOD> (Hilbert Transform - Dominant Cycle Period), L<TA_HT_DCPHASE|/TA_HT_DCPHASE> (Hilbert Transform - Dominant Cycle Phase), L<TA_HT_PHASOR|/TA_HT_PHASOR> (Hilbert Transform - Phasor Components), L<TA_HT_SINE|/TA_HT_SINE> (Hilbert Transform - SineWave), L<TA_HT_TRENDMODE|/TA_HT_TRENDMODE> (Hilbert Transform - Trend vs Cycle Mode)
+L<ta_ht_dcperiod|/ta_ht_dcperiod> (Hilbert Transform - Dominant Cycle Period), L<ta_ht_dcphase|/ta_ht_dcphase> (Hilbert Transform - Dominant Cycle Phase), L<ta_ht_phasor|/ta_ht_phasor> (Hilbert Transform - Phasor Components), L<ta_ht_sine|/ta_ht_sine> (Hilbert Transform - SineWave), L<ta_ht_trendmode|/ta_ht_trendmode> (Hilbert Transform - Trend vs Cycle Mode)
 
 =head2 Group: Volume Indicators
 
-L<TA_AD|/TA_AD> (Chaikin A/D Line), L<TA_ADOSC|/TA_ADOSC> (Chaikin A/D Oscillator), L<TA_OBV|/TA_OBV> (On Balance Volume)
+L<ta_ad|/ta_ad> (Chaikin A/D Line), L<ta_adosc|/ta_adosc> (Chaikin A/D Oscillator), L<ta_obv|/ta_obv> (On Balance Volume)
 
 =head2 Group: Pattern Recognition
 
-L<TA_CDL2CROWS|/TA_CDL2CROWS> (Two Crows), L<TA_CDL3BLACKCROWS|/TA_CDL3BLACKCROWS> (Three Black Crows), L<TA_CDL3INSIDE|/TA_CDL3INSIDE> (Three Inside Up/Down), L<TA_CDL3LINESTRIKE|/TA_CDL3LINESTRIKE> (Three-Line Strike ), L<TA_CDL3OUTSIDE|/TA_CDL3OUTSIDE> (Three Outside Up/Down), L<TA_CDL3STARSINSOUTH|/TA_CDL3STARSINSOUTH> (Three Stars In The South), L<TA_CDL3WHITESOLDIERS|/TA_CDL3WHITESOLDIERS> (Three Advancing White Soldiers), L<TA_CDLABANDONEDBABY|/TA_CDLABANDONEDBABY> (Abandoned Baby), L<TA_CDLADVANCEBLOCK|/TA_CDLADVANCEBLOCK> (Advance Block), L<TA_CDLBELTHOLD|/TA_CDLBELTHOLD> (Belt-hold), L<TA_CDLBREAKAWAY|/TA_CDLBREAKAWAY> (Breakaway), L<TA_CDLCLOSINGMARUBOZU|/TA_CDLCLOSINGMARUBOZU> (Closing Marubozu), L<TA_CDLCONCEALBABYSWALL|/TA_CDLCONCEALBABYSWALL> (Concealing Baby Swallow), L<TA_CDLCOUNTERATTACK|/TA_CDLCOUNTERATTACK> (Counterattack), L<TA_CDLDARKCLOUDCOVER|/TA_CDLDARKCLOUDCOVER> (Dark Cloud Cover), L<TA_CDLDOJI|/TA_CDLDOJI> (Doji), L<TA_CDLDOJISTAR|/TA_CDLDOJISTAR> (Doji Star), L<TA_CDLDRAGONFLYDOJI|/TA_CDLDRAGONFLYDOJI> (Dragonfly Doji), L<TA_CDLENGULFING|/TA_CDLENGULFING> (Engulfing Pattern), L<TA_CDLEVENINGDOJISTAR|/TA_CDLEVENINGDOJISTAR> (Evening Doji Star), L<TA_CDLEVENINGSTAR|/TA_CDLEVENINGSTAR> (Evening Star), L<TA_CDLGAPSIDESIDEWHITE|/TA_CDLGAPSIDESIDEWHITE> (Up/Down-gap side-by-side white lines), L<TA_CDLGRAVESTONEDOJI|/TA_CDLGRAVESTONEDOJI> (Gravestone Doji), L<TA_CDLHAMMER|/TA_CDLHAMMER> (Hammer), L<TA_CDLHANGINGMAN|/TA_CDLHANGINGMAN> (Hanging Man), L<TA_CDLHARAMI|/TA_CDLHARAMI> (Harami Pattern), L<TA_CDLHARAMICROSS|/TA_CDLHARAMICROSS> (Harami Cross Pattern), L<TA_CDLHIGHWAVE|/TA_CDLHIGHWAVE> (High-Wave Candle), L<TA_CDLHIKKAKE|/TA_CDLHIKKAKE> (Hikkake Pattern), L<TA_CDLHIKKAKEMOD|/TA_CDLHIKKAKEMOD> (Modified Hikkake Pattern), L<TA_CDLHOMINGPIGEON|/TA_CDLHOMINGPIGEON> (Homing Pigeon), L<TA_CDLIDENTICAL3CROWS|/TA_CDLIDENTICAL3CROWS> (Identical Three Crows), L<TA_CDLINNECK|/TA_CDLINNECK> (In-Neck Pattern), L<TA_CDLINVERTEDHAMMER|/TA_CDLINVERTEDHAMMER> (Inverted Hammer), L<TA_CDLKICKING|/TA_CDLKICKING> (Kicking), L<TA_CDLKICKINGBYLENGTH|/TA_CDLKICKINGBYLENGTH> (Kicking - bull/bear determined by the longer marubozu), L<TA_CDLLADDERBOTTOM|/TA_CDLLADDERBOTTOM> (Ladder Bottom), L<TA_CDLLONGLEGGEDDOJI|/TA_CDLLONGLEGGEDDOJI> (Long Legged Doji), L<TA_CDLLONGLINE|/TA_CDLLONGLINE> (Long Line Candle), L<TA_CDLMARUBOZU|/TA_CDLMARUBOZU> (Marubozu), L<TA_CDLMATCHINGLOW|/TA_CDLMATCHINGLOW> (Matching Low), L<TA_CDLMATHOLD|/TA_CDLMATHOLD> (Mat Hold), L<TA_CDLMORNINGDOJISTAR|/TA_CDLMORNINGDOJISTAR> (Morning Doji Star), L<TA_CDLMORNINGSTAR|/TA_CDLMORNINGSTAR> (Morning Star), L<TA_CDLONNECK|/TA_CDLONNECK> (On-Neck Pattern), L<TA_CDLPIERCING|/TA_CDLPIERCING> (Piercing Pattern), L<TA_CDLRICKSHAWMAN|/TA_CDLRICKSHAWMAN> (Rickshaw Man), L<TA_CDLRISEFALL3METHODS|/TA_CDLRISEFALL3METHODS> (Rising/Falling Three Methods), L<TA_CDLSEPARATINGLINES|/TA_CDLSEPARATINGLINES> (Separating Lines), L<TA_CDLSHOOTINGSTAR|/TA_CDLSHOOTINGSTAR> (Shooting Star), L<TA_CDLSHORTLINE|/TA_CDLSHORTLINE> (Short Line Candle), L<TA_CDLSPINNINGTOP|/TA_CDLSPINNINGTOP> (Spinning Top), L<TA_CDLSTALLEDPATTERN|/TA_CDLSTALLEDPATTERN> (Stalled Pattern), L<TA_CDLSTICKSANDWICH|/TA_CDLSTICKSANDWICH> (Stick Sandwich), L<TA_CDLTAKURI|/TA_CDLTAKURI> (Takuri (Dragonfly Doji with very long lower shadow)), L<TA_CDLTASUKIGAP|/TA_CDLTASUKIGAP> (Tasuki Gap), L<TA_CDLTHRUSTING|/TA_CDLTHRUSTING> (Thrusting Pattern), L<TA_CDLTRISTAR|/TA_CDLTRISTAR> (Tristar Pattern), L<TA_CDLUNIQUE3RIVER|/TA_CDLUNIQUE3RIVER> (Unique 3 River), L<TA_CDLUPSIDEGAP2CROWS|/TA_CDLUPSIDEGAP2CROWS> (Upside Gap Two Crows), L<TA_CDLXSIDEGAP3METHODS|/TA_CDLXSIDEGAP3METHODS> (Upside/Downside Gap Three Methods)
+L<ta_cdl2crows|/ta_cdl2crows> (Two Crows), L<ta_cdl3blackcrows|/ta_cdl3blackcrows> (Three Black Crows), L<ta_cdl3inside|/ta_cdl3inside> (Three Inside Up/Down), L<ta_cdl3linestrike|/ta_cdl3linestrike> (Three-Line Strike ), L<ta_cdl3outside|/ta_cdl3outside> (Three Outside Up/Down), L<ta_cdl3starsinsouth|/ta_cdl3starsinsouth> (Three Stars In The South), L<ta_cdl3whitesoldiers|/ta_cdl3whitesoldiers> (Three Advancing White Soldiers), L<ta_cdlabandonedbaby|/ta_cdlabandonedbaby> (Abandoned Baby), L<ta_cdladvanceblock|/ta_cdladvanceblock> (Advance Block), L<ta_cdlbelthold|/ta_cdlbelthold> (Belt-hold), L<ta_cdlbreakaway|/ta_cdlbreakaway> (Breakaway), L<ta_cdlclosingmarubozu|/ta_cdlclosingmarubozu> (Closing Marubozu), L<ta_cdlconcealbabyswall|/ta_cdlconcealbabyswall> (Concealing Baby Swallow), L<ta_cdlcounterattack|/ta_cdlcounterattack> (Counterattack), L<ta_cdldarkcloudcover|/ta_cdldarkcloudcover> (Dark Cloud Cover), L<ta_cdldoji|/ta_cdldoji> (Doji), L<ta_cdldojistar|/ta_cdldojistar> (Doji Star), L<ta_cdldragonflydoji|/ta_cdldragonflydoji> (Dragonfly Doji), L<ta_cdlengulfing|/ta_cdlengulfing> (Engulfing Pattern), L<ta_cdleveningdojistar|/ta_cdleveningdojistar> (Evening Doji Star), L<ta_cdleveningstar|/ta_cdleveningstar> (Evening Star), L<ta_cdlgapsidesidewhite|/ta_cdlgapsidesidewhite> (Up/Down-gap side-by-side white lines), L<ta_cdlgravestonedoji|/ta_cdlgravestonedoji> (Gravestone Doji), L<ta_cdlhammer|/ta_cdlhammer> (Hammer), L<ta_cdlhangingman|/ta_cdlhangingman> (Hanging Man), L<ta_cdlharami|/ta_cdlharami> (Harami Pattern), L<ta_cdlharamicross|/ta_cdlharamicross> (Harami Cross Pattern), L<ta_cdlhighwave|/ta_cdlhighwave> (High-Wave Candle), L<ta_cdlhikkake|/ta_cdlhikkake> (Hikkake Pattern), L<ta_cdlhikkakemod|/ta_cdlhikkakemod> (Modified Hikkake Pattern), L<ta_cdlhomingpigeon|/ta_cdlhomingpigeon> (Homing Pigeon), L<ta_cdlidentical3crows|/ta_cdlidentical3crows> (Identical Three Crows), L<ta_cdlinneck|/ta_cdlinneck> (In-Neck Pattern), L<ta_cdlinvertedhammer|/ta_cdlinvertedhammer> (Inverted Hammer), L<ta_cdlkicking|/ta_cdlkicking> (Kicking), L<ta_cdlkickingbylength|/ta_cdlkickingbylength> (Kicking - bull/bear determined by the longer marubozu), L<ta_cdlladderbottom|/ta_cdlladderbottom> (Ladder Bottom), L<ta_cdllongleggeddoji|/ta_cdllongleggeddoji> (Long Legged Doji), L<ta_cdllongline|/ta_cdllongline> (Long Line Candle), L<ta_cdlmarubozu|/ta_cdlmarubozu> (Marubozu), L<ta_cdlmatchinglow|/ta_cdlmatchinglow> (Matching Low), L<ta_cdlmathold|/ta_cdlmathold> (Mat Hold), L<ta_cdlmorningdojistar|/ta_cdlmorningdojistar> (Morning Doji Star), L<ta_cdlmorningstar|/ta_cdlmorningstar> (Morning Star), L<ta_cdlonneck|/ta_cdlonneck> (On-Neck Pattern), L<ta_cdlpiercing|/ta_cdlpiercing> (Piercing Pattern), L<ta_cdlrickshawman|/ta_cdlrickshawman> (Rickshaw Man), L<ta_cdlrisefall3methods|/ta_cdlrisefall3methods> (Rising/Falling Three Methods), L<ta_cdlseparatinglines|/ta_cdlseparatinglines> (Separating Lines), L<ta_cdlshootingstar|/ta_cdlshootingstar> (Shooting Star), L<ta_cdlshortline|/ta_cdlshortline> (Short Line Candle), L<ta_cdlspinningtop|/ta_cdlspinningtop> (Spinning Top), L<ta_cdlstalledpattern|/ta_cdlstalledpattern> (Stalled Pattern), L<ta_cdlsticksandwich|/ta_cdlsticksandwich> (Stick Sandwich), L<ta_cdltakuri|/ta_cdltakuri> (Takuri (Dragonfly Doji with very long lower shadow)), L<ta_cdltasukigap|/ta_cdltasukigap> (Tasuki Gap), L<ta_cdlthrusting|/ta_cdlthrusting> (Thrusting Pattern), L<ta_cdltristar|/ta_cdltristar> (Tristar Pattern), L<ta_cdlunique3river|/ta_cdlunique3river> (Unique 3 River), L<ta_cdlupsidegap2crows|/ta_cdlupsidegap2crows> (Upside Gap Two Crows), L<ta_cdlxsidegap3methods|/ta_cdlxsidegap3methods> (Upside/Downside Gap Three Methods)
 
 =head2 Group: Statistic Functions
 
-L<TA_BETA|/TA_BETA> (Beta), L<TA_CORREL|/TA_CORREL> (Pearson's Correlation Coefficient (r)), L<TA_LINEARREG|/TA_LINEARREG> (Linear Regression), L<TA_LINEARREG_ANGLE|/TA_LINEARREG_ANGLE> (Linear Regression Angle), L<TA_LINEARREG_INTERCEPT|/TA_LINEARREG_INTERCEPT> (Linear Regression Intercept), L<TA_LINEARREG_SLOPE|/TA_LINEARREG_SLOPE> (Linear Regression Slope), L<TA_STDDEV|/TA_STDDEV> (Standard Deviation), L<TA_TSF|/TA_TSF> (Time Series Forecast), L<TA_VAR|/TA_VAR> (Variance)
+L<ta_beta|/ta_beta> (Beta), L<ta_correl|/ta_correl> (Pearson's Correlation Coefficient (r)), L<ta_linearreg|/ta_linearreg> (Linear Regression), L<ta_linearreg_angle|/ta_linearreg_angle> (Linear Regression Angle), L<ta_linearreg_intercept|/ta_linearreg_intercept> (Linear Regression Intercept), L<ta_linearreg_slope|/ta_linearreg_slope> (Linear Regression Slope), L<ta_stddev|/ta_stddev> (Standard Deviation), L<ta_tsf|/ta_tsf> (Time Series Forecast), L<ta_var|/ta_var> (Variance)
 
 =head2 Group: Price Transform
 
-L<TA_AVGPRICE|/TA_AVGPRICE> (Average Price), L<TA_MEDPRICE|/TA_MEDPRICE> (Median Price), L<TA_TYPPRICE|/TA_TYPPRICE> (Typical Price), L<TA_WCLPRICE|/TA_WCLPRICE> (Weighted Close Price)
+L<ta_avgprice|/ta_avgprice> (Average Price), L<ta_medprice|/ta_medprice> (Median Price), L<ta_typprice|/ta_typprice> (Typical Price), L<ta_wclprice|/ta_wclprice> (Weighted Close Price)
 
 =head1 HANDLING BAD VALUES
 
@@ -95,7 +95,7 @@ Most of the available functions may return BAD values, for example:
   use PDL;
   use PDL::Finance::Talib;
   my $PD = pdl([0, 1, 2, 3, 4, 5]);
-  my $MA = TA_MA($PD, 3, 1);
+  my $MA = ta_ma($PD, 3, 1);
   print $MA;      # prints: [BAD BAD 1 2 3 4]
 
 All available functions handles BAD values in input piddles (BAD values at the beginning are skipped), for example:
@@ -103,9 +103,9 @@ All available functions handles BAD values in input piddles (BAD values at the b
   use PDL;
   use PDL::Finance::Talib;
   my $PD = pdl([0, 1, 2, 3, 4, 5]);
-  my $MA1 = TA_MA($PD, 3, 1);
+  my $MA1 = ta_ma($PD, 3, 1);
   say $MA1;      # prints: [BAD BAD 1 2 3 4]
-  my $MA2 = TA_MA($MA1, 3, 1);
+  my $MA2 = ta_ma($MA1, 3, 1);
   say $MA2;      # prints: [BAD BAD BAD BAD 2 3]
 
 =cut
@@ -126,7 +126,7 @@ All available functions handles BAD values in input piddles (BAD values at the b
 
 
 
-=head2 TA_BBANDS
+=head2 ta_bbands
 
 =for sig
 
@@ -134,7 +134,7 @@ All available functions handles BAD values in input piddles (BAD values at the b
 
 Bollinger Bands
 
-  ($outpdlUpperBand, $outpdlMiddleBand, $outpdlLowerBand) = TA_BBANDS($inpdl, $InTimePeriod, $InNbDevUp, $InNbDevDn, $InMAType);
+  ($outpdlUpperBand, $outpdlMiddleBand, $outpdlLowerBand) = ta_bbands($inpdl, $InTimePeriod, $InNbDevUp, $InNbDevDn, $InMAType);
 
  # $inpdl - 1D piddle with input data
  # $InTimePeriod [Number of period] - integer
@@ -156,7 +156,7 @@ Bollinger Bands
 
 =for bad
 
-TA_BBANDS processes bad values.
+ta_bbands processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -167,13 +167,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_BBANDS = \&PDL::TA_BBANDS;
+*ta_bbands = \&PDL::ta_bbands;
 
 
 
 
 
-=head2 TA_DEMA
+=head2 ta_dema
 
 =for sig
 
@@ -181,7 +181,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Double Exponential Moving Average
 
-  $outpdl = TA_DEMA($inpdl, $InTimePeriod);
+  $outpdl = ta_dema($inpdl, $InTimePeriod);
 
  # $inpdl - 1D piddle with input data
  # $InTimePeriod [Number of period] - integer
@@ -192,7 +192,7 @@ Double Exponential Moving Average
 
 =for bad
 
-TA_DEMA processes bad values.
+ta_dema processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -203,13 +203,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_DEMA = \&PDL::TA_DEMA;
+*ta_dema = \&PDL::ta_dema;
 
 
 
 
 
-=head2 TA_EMA
+=head2 ta_ema
 
 =for sig
 
@@ -217,7 +217,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Exponential Moving Average
 
-  $outpdl = TA_EMA($inpdl, $InTimePeriod);
+  $outpdl = ta_ema($inpdl, $InTimePeriod);
 
  # $inpdl - 1D piddle with input data
  # $InTimePeriod [Number of period] - integer
@@ -228,7 +228,7 @@ Exponential Moving Average
 
 =for bad
 
-TA_EMA processes bad values.
+ta_ema processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -239,13 +239,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_EMA = \&PDL::TA_EMA;
+*ta_ema = \&PDL::ta_ema;
 
 
 
 
 
-=head2 TA_HT_TRENDLINE
+=head2 ta_ht_trendline
 
 =for sig
 
@@ -253,7 +253,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Hilbert Transform - Instantaneous Trendline
 
-  $outpdl = TA_HT_TRENDLINE($inpdl);
+  $outpdl = ta_ht_trendline($inpdl);
 
  # $inpdl - 1D piddle with input data
  # returns: $outpdl - 1D piddle
@@ -261,7 +261,7 @@ Hilbert Transform - Instantaneous Trendline
 
 =for bad
 
-TA_HT_TRENDLINE processes bad values.
+ta_ht_trendline processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -272,13 +272,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_HT_TRENDLINE = \&PDL::TA_HT_TRENDLINE;
+*ta_ht_trendline = \&PDL::ta_ht_trendline;
 
 
 
 
 
-=head2 TA_KAMA
+=head2 ta_kama
 
 =for sig
 
@@ -286,7 +286,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Kaufman Adaptive Moving Average
 
-  $outpdl = TA_KAMA($inpdl, $InTimePeriod);
+  $outpdl = ta_kama($inpdl, $InTimePeriod);
 
  # $inpdl - 1D piddle with input data
  # $InTimePeriod [Number of period] - integer
@@ -297,7 +297,7 @@ Kaufman Adaptive Moving Average
 
 =for bad
 
-TA_KAMA processes bad values.
+ta_kama processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -308,13 +308,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_KAMA = \&PDL::TA_KAMA;
+*ta_kama = \&PDL::ta_kama;
 
 
 
 
 
-=head2 TA_MA
+=head2 ta_ma
 
 =for sig
 
@@ -322,7 +322,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Moving average
 
-  $outpdl = TA_MA($inpdl, $InTimePeriod, $InMAType);
+  $outpdl = ta_ma($inpdl, $InTimePeriod, $InMAType);
 
  # $inpdl - 1D piddle with input data
  # $InTimePeriod [Number of period] - integer
@@ -336,7 +336,7 @@ Moving average
 
 =for bad
 
-TA_MA processes bad values.
+ta_ma processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -347,13 +347,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_MA = \&PDL::TA_MA;
+*ta_ma = \&PDL::ta_ma;
 
 
 
 
 
-=head2 TA_MAMA
+=head2 ta_mama
 
 =for sig
 
@@ -361,7 +361,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 MESA Adaptive Moving Average
 
-  ($outMAMA, $outFAMA) = TA_MAMA($inpdl, $InFastLimit, $InSlowLimit);
+  ($outMAMA, $outFAMA) = ta_mama($inpdl, $InFastLimit, $InSlowLimit);
 
  # $inpdl - 1D piddle with input data
  # $InFastLimit [Upper limit use in the adaptive algorithm] - real number
@@ -376,7 +376,7 @@ MESA Adaptive Moving Average
 
 =for bad
 
-TA_MAMA processes bad values.
+ta_mama processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -387,13 +387,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_MAMA = \&PDL::TA_MAMA;
+*ta_mama = \&PDL::ta_mama;
 
 
 
 
 
-=head2 TA_MAVP
+=head2 ta_mavp
 
 =for sig
 
@@ -401,7 +401,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Moving average with variable period
 
-  $outpdl = TA_MAVP($inpdl, $inPeriods, $InMinPeriod, $InMaxPeriod, $InMAType);
+  $outpdl = ta_mavp($inpdl, $inPeriods, $InMinPeriod, $InMaxPeriod, $InMAType);
 
  # $inpdl - 1D piddle with input data
  # $inPeriods - 1D piddle
@@ -419,7 +419,7 @@ Moving average with variable period
 
 =for bad
 
-TA_MAVP processes bad values.
+ta_mavp processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -430,13 +430,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_MAVP = \&PDL::TA_MAVP;
+*ta_mavp = \&PDL::ta_mavp;
 
 
 
 
 
-=head2 TA_MIDPOINT
+=head2 ta_midpoint
 
 =for sig
 
@@ -444,7 +444,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 MidPoint over period
 
-  $outpdl = TA_MIDPOINT($inpdl, $InTimePeriod);
+  $outpdl = ta_midpoint($inpdl, $InTimePeriod);
 
  # $inpdl - 1D piddle with input data
  # $InTimePeriod [Number of period] - integer
@@ -455,7 +455,7 @@ MidPoint over period
 
 =for bad
 
-TA_MIDPOINT processes bad values.
+ta_midpoint processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -466,13 +466,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_MIDPOINT = \&PDL::TA_MIDPOINT;
+*ta_midpoint = \&PDL::ta_midpoint;
 
 
 
 
 
-=head2 TA_MIDPRICE
+=head2 ta_midprice
 
 =for sig
 
@@ -480,7 +480,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Midpoint Price over period
 
-  $outpdl = TA_MIDPRICE($high, $low, $InTimePeriod);
+  $outpdl = ta_midprice($high, $low, $InTimePeriod);
 
  # $high, $low - 1D piddles, both have to be the same size
  # $InTimePeriod [Number of period] - integer
@@ -491,7 +491,7 @@ Midpoint Price over period
 
 =for bad
 
-TA_MIDPRICE processes bad values.
+ta_midprice processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -502,13 +502,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_MIDPRICE = \&PDL::TA_MIDPRICE;
+*ta_midprice = \&PDL::ta_midprice;
 
 
 
 
 
-=head2 TA_SAR
+=head2 ta_sar
 
 =for sig
 
@@ -516,7 +516,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Parabolic SAR
 
-  $outpdl = TA_SAR($high, $low, $InAcceleration, $InMaximum);
+  $outpdl = ta_sar($high, $low, $InAcceleration, $InMaximum);
 
  # $high, $low - 1D piddles, both have to be the same size
  # $InAcceleration [Acceleration Factor used up to the Maximum value] - real number
@@ -530,7 +530,7 @@ Parabolic SAR
 
 =for bad
 
-TA_SAR processes bad values.
+ta_sar processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -541,13 +541,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_SAR = \&PDL::TA_SAR;
+*ta_sar = \&PDL::ta_sar;
 
 
 
 
 
-=head2 TA_SAREXT
+=head2 ta_sarext
 
 =for sig
 
@@ -555,7 +555,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Parabolic SAR - Extended
 
-  $outpdl = TA_SAREXT($high, $low, $InStartValue, $InOffsetOnReverse, $InAccelerationInitLong, $InAccelerationLong, $InAccelerationMaxLong, $InAccelerationInitShort, $InAccelerationShort, $InAccelerationMaxShort);
+  $outpdl = ta_sarext($high, $low, $InStartValue, $InOffsetOnReverse, $InAccelerationInitLong, $InAccelerationLong, $InAccelerationMaxLong, $InAccelerationInitShort, $InAccelerationShort, $InAccelerationMaxShort);
 
  # $high, $low - 1D piddles, both have to be the same size
  # $InStartValue [Start value and direction. 0 for Auto, >0 for Long, <0 for Short] - real number
@@ -587,7 +587,7 @@ Parabolic SAR - Extended
 
 =for bad
 
-TA_SAREXT processes bad values.
+ta_sarext processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -598,13 +598,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_SAREXT = \&PDL::TA_SAREXT;
+*ta_sarext = \&PDL::ta_sarext;
 
 
 
 
 
-=head2 TA_SMA
+=head2 ta_sma
 
 =for sig
 
@@ -612,7 +612,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Simple Moving Average
 
-  $outpdl = TA_SMA($inpdl, $InTimePeriod);
+  $outpdl = ta_sma($inpdl, $InTimePeriod);
 
  # $inpdl - 1D piddle with input data
  # $InTimePeriod [Number of period] - integer
@@ -623,7 +623,7 @@ Simple Moving Average
 
 =for bad
 
-TA_SMA processes bad values.
+ta_sma processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -634,13 +634,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_SMA = \&PDL::TA_SMA;
+*ta_sma = \&PDL::ta_sma;
 
 
 
 
 
-=head2 TA_T3
+=head2 ta_t3
 
 =for sig
 
@@ -648,7 +648,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Triple Exponential Moving Average (T3)
 
-  $outpdl = TA_T3($inpdl, $InTimePeriod, $InVFactor);
+  $outpdl = ta_t3($inpdl, $InTimePeriod, $InVFactor);
 
  # $inpdl - 1D piddle with input data
  # $InTimePeriod [Number of period] - integer
@@ -662,7 +662,7 @@ Triple Exponential Moving Average (T3)
 
 =for bad
 
-TA_T3 processes bad values.
+ta_t3 processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -673,13 +673,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_T3 = \&PDL::TA_T3;
+*ta_t3 = \&PDL::ta_t3;
 
 
 
 
 
-=head2 TA_TEMA
+=head2 ta_tema
 
 =for sig
 
@@ -687,7 +687,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Triple Exponential Moving Average
 
-  $outpdl = TA_TEMA($inpdl, $InTimePeriod);
+  $outpdl = ta_tema($inpdl, $InTimePeriod);
 
  # $inpdl - 1D piddle with input data
  # $InTimePeriod [Number of period] - integer
@@ -698,7 +698,7 @@ Triple Exponential Moving Average
 
 =for bad
 
-TA_TEMA processes bad values.
+ta_tema processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -709,13 +709,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_TEMA = \&PDL::TA_TEMA;
+*ta_tema = \&PDL::ta_tema;
 
 
 
 
 
-=head2 TA_TRIMA
+=head2 ta_trima
 
 =for sig
 
@@ -723,7 +723,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Triangular Moving Average
 
-  $outpdl = TA_TRIMA($inpdl, $InTimePeriod);
+  $outpdl = ta_trima($inpdl, $InTimePeriod);
 
  # $inpdl - 1D piddle with input data
  # $InTimePeriod [Number of period] - integer
@@ -734,7 +734,7 @@ Triangular Moving Average
 
 =for bad
 
-TA_TRIMA processes bad values.
+ta_trima processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -745,13 +745,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_TRIMA = \&PDL::TA_TRIMA;
+*ta_trima = \&PDL::ta_trima;
 
 
 
 
 
-=head2 TA_WMA
+=head2 ta_wma
 
 =for sig
 
@@ -759,7 +759,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Weighted Moving Average
 
-  $outpdl = TA_WMA($inpdl, $InTimePeriod);
+  $outpdl = ta_wma($inpdl, $InTimePeriod);
 
  # $inpdl - 1D piddle with input data
  # $InTimePeriod [Number of period] - integer
@@ -770,7 +770,7 @@ Weighted Moving Average
 
 =for bad
 
-TA_WMA processes bad values.
+ta_wma processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -781,13 +781,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_WMA = \&PDL::TA_WMA;
+*ta_wma = \&PDL::ta_wma;
 
 
 
 
 
-=head2 TA_ATR
+=head2 ta_atr
 
 =for sig
 
@@ -795,7 +795,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Average True Range
 
-  $outpdl = TA_ATR($high, $low, $close, $InTimePeriod);
+  $outpdl = ta_atr($high, $low, $close, $InTimePeriod);
 
  # $high, $low, $close - 1D piddles, all have to be the same size
  # $InTimePeriod [Number of period] - integer
@@ -806,7 +806,7 @@ Average True Range
 
 =for bad
 
-TA_ATR processes bad values.
+ta_atr processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -817,13 +817,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_ATR = \&PDL::TA_ATR;
+*ta_atr = \&PDL::ta_atr;
 
 
 
 
 
-=head2 TA_NATR
+=head2 ta_natr
 
 =for sig
 
@@ -831,7 +831,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Normalized Average True Range
 
-  $outpdl = TA_NATR($high, $low, $close, $InTimePeriod);
+  $outpdl = ta_natr($high, $low, $close, $InTimePeriod);
 
  # $high, $low, $close - 1D piddles, all have to be the same size
  # $InTimePeriod [Number of period] - integer
@@ -842,7 +842,7 @@ Normalized Average True Range
 
 =for bad
 
-TA_NATR processes bad values.
+ta_natr processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -853,13 +853,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_NATR = \&PDL::TA_NATR;
+*ta_natr = \&PDL::ta_natr;
 
 
 
 
 
-=head2 TA_TRANGE
+=head2 ta_trange
 
 =for sig
 
@@ -867,7 +867,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 True Range
 
-  $outpdl = TA_TRANGE($high, $low, $close);
+  $outpdl = ta_trange($high, $low, $close);
 
  # $high, $low, $close - 1D piddles, all have to be the same size
  # returns: $outpdl - 1D piddle
@@ -875,7 +875,7 @@ True Range
 
 =for bad
 
-TA_TRANGE processes bad values.
+ta_trange processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -886,13 +886,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_TRANGE = \&PDL::TA_TRANGE;
+*ta_trange = \&PDL::ta_trange;
 
 
 
 
 
-=head2 TA_ADX
+=head2 ta_adx
 
 =for sig
 
@@ -900,7 +900,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Average Directional Movement Index
 
-  $outpdl = TA_ADX($high, $low, $close, $InTimePeriod);
+  $outpdl = ta_adx($high, $low, $close, $InTimePeriod);
 
  # $high, $low, $close - 1D piddles, all have to be the same size
  # $InTimePeriod [Number of period] - integer
@@ -911,7 +911,7 @@ Average Directional Movement Index
 
 =for bad
 
-TA_ADX processes bad values.
+ta_adx processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -922,13 +922,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_ADX = \&PDL::TA_ADX;
+*ta_adx = \&PDL::ta_adx;
 
 
 
 
 
-=head2 TA_ADXR
+=head2 ta_adxr
 
 =for sig
 
@@ -936,7 +936,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Average Directional Movement Index Rating
 
-  $outpdl = TA_ADXR($high, $low, $close, $InTimePeriod);
+  $outpdl = ta_adxr($high, $low, $close, $InTimePeriod);
 
  # $high, $low, $close - 1D piddles, all have to be the same size
  # $InTimePeriod [Number of period] - integer
@@ -947,7 +947,7 @@ Average Directional Movement Index Rating
 
 =for bad
 
-TA_ADXR processes bad values.
+ta_adxr processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -958,13 +958,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_ADXR = \&PDL::TA_ADXR;
+*ta_adxr = \&PDL::ta_adxr;
 
 
 
 
 
-=head2 TA_APO
+=head2 ta_apo
 
 =for sig
 
@@ -972,7 +972,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Absolute Price Oscillator
 
-  $outpdl = TA_APO($inpdl, $InFastPeriod, $InSlowPeriod, $InMAType);
+  $outpdl = ta_apo($inpdl, $InFastPeriod, $InSlowPeriod, $InMAType);
 
  # $inpdl - 1D piddle with input data
  # $InFastPeriod [Number of period for the fast MA] - integer
@@ -989,7 +989,7 @@ Absolute Price Oscillator
 
 =for bad
 
-TA_APO processes bad values.
+ta_apo processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -1000,13 +1000,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_APO = \&PDL::TA_APO;
+*ta_apo = \&PDL::ta_apo;
 
 
 
 
 
-=head2 TA_AROON
+=head2 ta_aroon
 
 =for sig
 
@@ -1014,7 +1014,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Aroon
 
-  ($outAroonDown, $outAroonUp) = TA_AROON($high, $low, $InTimePeriod);
+  ($outAroonDown, $outAroonUp) = ta_aroon($high, $low, $InTimePeriod);
 
  # $high, $low - 1D piddles, both have to be the same size
  # $InTimePeriod [Number of period] - integer
@@ -1026,7 +1026,7 @@ Aroon
 
 =for bad
 
-TA_AROON processes bad values.
+ta_aroon processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -1037,13 +1037,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_AROON = \&PDL::TA_AROON;
+*ta_aroon = \&PDL::ta_aroon;
 
 
 
 
 
-=head2 TA_AROONOSC
+=head2 ta_aroonosc
 
 =for sig
 
@@ -1051,7 +1051,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Aroon Oscillator
 
-  $outpdl = TA_AROONOSC($high, $low, $InTimePeriod);
+  $outpdl = ta_aroonosc($high, $low, $InTimePeriod);
 
  # $high, $low - 1D piddles, both have to be the same size
  # $InTimePeriod [Number of period] - integer
@@ -1062,7 +1062,7 @@ Aroon Oscillator
 
 =for bad
 
-TA_AROONOSC processes bad values.
+ta_aroonosc processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -1073,13 +1073,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_AROONOSC = \&PDL::TA_AROONOSC;
+*ta_aroonosc = \&PDL::ta_aroonosc;
 
 
 
 
 
-=head2 TA_BOP
+=head2 ta_bop
 
 =for sig
 
@@ -1087,7 +1087,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Balance Of Power
 
-  $outpdl = TA_BOP($open, $high, $low, $close);
+  $outpdl = ta_bop($open, $high, $low, $close);
 
  # $open, $high, $low, $close - 1D piddles, all have to be the same size
  # returns: $outpdl - 1D piddle
@@ -1095,7 +1095,7 @@ Balance Of Power
 
 =for bad
 
-TA_BOP processes bad values.
+ta_bop processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -1106,13 +1106,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_BOP = \&PDL::TA_BOP;
+*ta_bop = \&PDL::ta_bop;
 
 
 
 
 
-=head2 TA_CCI
+=head2 ta_cci
 
 =for sig
 
@@ -1120,7 +1120,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Commodity Channel Index
 
-  $outpdl = TA_CCI($high, $low, $close, $InTimePeriod);
+  $outpdl = ta_cci($high, $low, $close, $InTimePeriod);
 
  # $high, $low, $close - 1D piddles, all have to be the same size
  # $InTimePeriod [Number of period] - integer
@@ -1131,7 +1131,7 @@ Commodity Channel Index
 
 =for bad
 
-TA_CCI processes bad values.
+ta_cci processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -1142,13 +1142,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_CCI = \&PDL::TA_CCI;
+*ta_cci = \&PDL::ta_cci;
 
 
 
 
 
-=head2 TA_CMO
+=head2 ta_cmo
 
 =for sig
 
@@ -1156,7 +1156,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Chande Momentum Oscillator
 
-  $outpdl = TA_CMO($inpdl, $InTimePeriod);
+  $outpdl = ta_cmo($inpdl, $InTimePeriod);
 
  # $inpdl - 1D piddle with input data
  # $InTimePeriod [Number of period] - integer
@@ -1167,7 +1167,7 @@ Chande Momentum Oscillator
 
 =for bad
 
-TA_CMO processes bad values.
+ta_cmo processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -1178,13 +1178,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_CMO = \&PDL::TA_CMO;
+*ta_cmo = \&PDL::ta_cmo;
 
 
 
 
 
-=head2 TA_DX
+=head2 ta_dx
 
 =for sig
 
@@ -1192,7 +1192,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Directional Movement Index
 
-  $outpdl = TA_DX($high, $low, $close, $InTimePeriod);
+  $outpdl = ta_dx($high, $low, $close, $InTimePeriod);
 
  # $high, $low, $close - 1D piddles, all have to be the same size
  # $InTimePeriod [Number of period] - integer
@@ -1203,7 +1203,7 @@ Directional Movement Index
 
 =for bad
 
-TA_DX processes bad values.
+ta_dx processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -1214,13 +1214,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_DX = \&PDL::TA_DX;
+*ta_dx = \&PDL::ta_dx;
 
 
 
 
 
-=head2 TA_MACD
+=head2 ta_macd
 
 =for sig
 
@@ -1228,7 +1228,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Moving Average Convergence/Divergence
 
-  ($outMACD, $outMACDSignal, $outMACDHist) = TA_MACD($inpdl, $InFastPeriod, $InSlowPeriod, $InSignalPeriod);
+  ($outMACD, $outMACDSignal, $outMACDHist) = ta_macd($inpdl, $InFastPeriod, $InSlowPeriod, $InSignalPeriod);
 
  # $inpdl - 1D piddle with input data
  # $InFastPeriod [Number of period for the fast MA] - integer
@@ -1247,7 +1247,7 @@ Moving Average Convergence/Divergence
 
 =for bad
 
-TA_MACD processes bad values.
+ta_macd processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -1258,13 +1258,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_MACD = \&PDL::TA_MACD;
+*ta_macd = \&PDL::ta_macd;
 
 
 
 
 
-=head2 TA_MACDEXT
+=head2 ta_macdext
 
 =for sig
 
@@ -1272,7 +1272,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 MACD with controllable MA type
 
-  ($outMACD, $outMACDSignal, $outMACDHist) = TA_MACDEXT($inpdl, $InFastPeriod, $InFastMAType, $InSlowPeriod, $InSlowMAType, $InSignalPeriod, $InSignalMAType);
+  ($outMACD, $outMACDSignal, $outMACDHist) = ta_macdext($inpdl, $InFastPeriod, $InFastMAType, $InSlowPeriod, $InSlowMAType, $InSignalPeriod, $InSignalMAType);
 
  # $inpdl - 1D piddle with input data
  # $InFastPeriod [Number of period for the fast MA] - integer
@@ -1300,7 +1300,7 @@ MACD with controllable MA type
 
 =for bad
 
-TA_MACDEXT processes bad values.
+ta_macdext processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -1311,13 +1311,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_MACDEXT = \&PDL::TA_MACDEXT;
+*ta_macdext = \&PDL::ta_macdext;
 
 
 
 
 
-=head2 TA_MACDFIX
+=head2 ta_macdfix
 
 =for sig
 
@@ -1325,7 +1325,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Moving Average Convergence/Divergence Fix 12/26
 
-  ($outMACD, $outMACDSignal, $outMACDHist) = TA_MACDFIX($inpdl, $InSignalPeriod);
+  ($outMACD, $outMACDSignal, $outMACDHist) = ta_macdfix($inpdl, $InSignalPeriod);
 
  # $inpdl - 1D piddle with input data
  # $InSignalPeriod [Smoothing for the signal line (nb of period)] - integer
@@ -1338,7 +1338,7 @@ Moving Average Convergence/Divergence Fix 12/26
 
 =for bad
 
-TA_MACDFIX processes bad values.
+ta_macdfix processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -1349,13 +1349,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_MACDFIX = \&PDL::TA_MACDFIX;
+*ta_macdfix = \&PDL::ta_macdfix;
 
 
 
 
 
-=head2 TA_MFI
+=head2 ta_mfi
 
 =for sig
 
@@ -1363,7 +1363,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Money Flow Index
 
-  $outpdl = TA_MFI($high, $low, $close, $volume, $InTimePeriod);
+  $outpdl = ta_mfi($high, $low, $close, $volume, $InTimePeriod);
 
  # $high, $low, $close, $volume - 1D piddles, all have to be the same size
  # $InTimePeriod [Number of period] - integer
@@ -1374,7 +1374,7 @@ Money Flow Index
 
 =for bad
 
-TA_MFI processes bad values.
+ta_mfi processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -1385,13 +1385,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_MFI = \&PDL::TA_MFI;
+*ta_mfi = \&PDL::ta_mfi;
 
 
 
 
 
-=head2 TA_MINUS_DI
+=head2 ta_minus_di
 
 =for sig
 
@@ -1399,7 +1399,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Minus Directional Indicator
 
-  $outpdl = TA_MINUS_DI($high, $low, $close, $InTimePeriod);
+  $outpdl = ta_minus_di($high, $low, $close, $InTimePeriod);
 
  # $high, $low, $close - 1D piddles, all have to be the same size
  # $InTimePeriod [Number of period] - integer
@@ -1410,7 +1410,7 @@ Minus Directional Indicator
 
 =for bad
 
-TA_MINUS_DI processes bad values.
+ta_minus_di processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -1421,13 +1421,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_MINUS_DI = \&PDL::TA_MINUS_DI;
+*ta_minus_di = \&PDL::ta_minus_di;
 
 
 
 
 
-=head2 TA_MINUS_DM
+=head2 ta_minus_dm
 
 =for sig
 
@@ -1435,7 +1435,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Minus Directional Movement
 
-  $outpdl = TA_MINUS_DM($high, $low, $InTimePeriod);
+  $outpdl = ta_minus_dm($high, $low, $InTimePeriod);
 
  # $high, $low - 1D piddles, both have to be the same size
  # $InTimePeriod [Number of period] - integer
@@ -1446,7 +1446,7 @@ Minus Directional Movement
 
 =for bad
 
-TA_MINUS_DM processes bad values.
+ta_minus_dm processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -1457,13 +1457,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_MINUS_DM = \&PDL::TA_MINUS_DM;
+*ta_minus_dm = \&PDL::ta_minus_dm;
 
 
 
 
 
-=head2 TA_MOM
+=head2 ta_mom
 
 =for sig
 
@@ -1471,7 +1471,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Momentum
 
-  $outpdl = TA_MOM($inpdl, $InTimePeriod);
+  $outpdl = ta_mom($inpdl, $InTimePeriod);
 
  # $inpdl - 1D piddle with input data
  # $InTimePeriod [Number of period] - integer
@@ -1482,7 +1482,7 @@ Momentum
 
 =for bad
 
-TA_MOM processes bad values.
+ta_mom processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -1493,13 +1493,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_MOM = \&PDL::TA_MOM;
+*ta_mom = \&PDL::ta_mom;
 
 
 
 
 
-=head2 TA_PLUS_DI
+=head2 ta_plus_di
 
 =for sig
 
@@ -1507,7 +1507,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Plus Directional Indicator
 
-  $outpdl = TA_PLUS_DI($high, $low, $close, $InTimePeriod);
+  $outpdl = ta_plus_di($high, $low, $close, $InTimePeriod);
 
  # $high, $low, $close - 1D piddles, all have to be the same size
  # $InTimePeriod [Number of period] - integer
@@ -1518,7 +1518,7 @@ Plus Directional Indicator
 
 =for bad
 
-TA_PLUS_DI processes bad values.
+ta_plus_di processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -1529,13 +1529,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_PLUS_DI = \&PDL::TA_PLUS_DI;
+*ta_plus_di = \&PDL::ta_plus_di;
 
 
 
 
 
-=head2 TA_PLUS_DM
+=head2 ta_plus_dm
 
 =for sig
 
@@ -1543,7 +1543,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Plus Directional Movement
 
-  $outpdl = TA_PLUS_DM($high, $low, $InTimePeriod);
+  $outpdl = ta_plus_dm($high, $low, $InTimePeriod);
 
  # $high, $low - 1D piddles, both have to be the same size
  # $InTimePeriod [Number of period] - integer
@@ -1554,7 +1554,7 @@ Plus Directional Movement
 
 =for bad
 
-TA_PLUS_DM processes bad values.
+ta_plus_dm processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -1565,13 +1565,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_PLUS_DM = \&PDL::TA_PLUS_DM;
+*ta_plus_dm = \&PDL::ta_plus_dm;
 
 
 
 
 
-=head2 TA_PPO
+=head2 ta_ppo
 
 =for sig
 
@@ -1579,7 +1579,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Percentage Price Oscillator
 
-  $outpdl = TA_PPO($inpdl, $InFastPeriod, $InSlowPeriod, $InMAType);
+  $outpdl = ta_ppo($inpdl, $InFastPeriod, $InSlowPeriod, $InMAType);
 
  # $inpdl - 1D piddle with input data
  # $InFastPeriod [Number of period for the fast MA] - integer
@@ -1596,7 +1596,7 @@ Percentage Price Oscillator
 
 =for bad
 
-TA_PPO processes bad values.
+ta_ppo processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -1607,13 +1607,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_PPO = \&PDL::TA_PPO;
+*ta_ppo = \&PDL::ta_ppo;
 
 
 
 
 
-=head2 TA_ROC
+=head2 ta_roc
 
 =for sig
 
@@ -1621,7 +1621,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Rate of change : ((price/prevPrice-1)*100)
 
-  $outpdl = TA_ROC($inpdl, $InTimePeriod);
+  $outpdl = ta_roc($inpdl, $InTimePeriod);
 
  # $inpdl - 1D piddle with input data
  # $InTimePeriod [Number of period] - integer
@@ -1632,7 +1632,7 @@ Rate of change : ((price/prevPrice-1)*100)
 
 =for bad
 
-TA_ROC processes bad values.
+ta_roc processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -1643,13 +1643,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_ROC = \&PDL::TA_ROC;
+*ta_roc = \&PDL::ta_roc;
 
 
 
 
 
-=head2 TA_ROCP
+=head2 ta_rocp
 
 =for sig
 
@@ -1657,7 +1657,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Rate of change Percentage: (price-prevPrice/prevPrice)
 
-  $outpdl = TA_ROCP($inpdl, $InTimePeriod);
+  $outpdl = ta_rocp($inpdl, $InTimePeriod);
 
  # $inpdl - 1D piddle with input data
  # $InTimePeriod [Number of period] - integer
@@ -1668,7 +1668,7 @@ Rate of change Percentage: (price-prevPrice/prevPrice)
 
 =for bad
 
-TA_ROCP processes bad values.
+ta_rocp processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -1679,13 +1679,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_ROCP = \&PDL::TA_ROCP;
+*ta_rocp = \&PDL::ta_rocp;
 
 
 
 
 
-=head2 TA_ROCR
+=head2 ta_rocr
 
 =for sig
 
@@ -1693,7 +1693,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Rate of change ratio: (price/prevPrice)
 
-  $outpdl = TA_ROCR($inpdl, $InTimePeriod);
+  $outpdl = ta_rocr($inpdl, $InTimePeriod);
 
  # $inpdl - 1D piddle with input data
  # $InTimePeriod [Number of period] - integer
@@ -1704,7 +1704,7 @@ Rate of change ratio: (price/prevPrice)
 
 =for bad
 
-TA_ROCR processes bad values.
+ta_rocr processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -1715,13 +1715,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_ROCR = \&PDL::TA_ROCR;
+*ta_rocr = \&PDL::ta_rocr;
 
 
 
 
 
-=head2 TA_ROCR100
+=head2 ta_rocr100
 
 =for sig
 
@@ -1729,7 +1729,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Rate of change ratio 100 scale: (price/prevPrice*100)
 
-  $outpdl = TA_ROCR100($inpdl, $InTimePeriod);
+  $outpdl = ta_rocr100($inpdl, $InTimePeriod);
 
  # $inpdl - 1D piddle with input data
  # $InTimePeriod [Number of period] - integer
@@ -1740,7 +1740,7 @@ Rate of change ratio 100 scale: (price/prevPrice*100)
 
 =for bad
 
-TA_ROCR100 processes bad values.
+ta_rocr100 processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -1751,13 +1751,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_ROCR100 = \&PDL::TA_ROCR100;
+*ta_rocr100 = \&PDL::ta_rocr100;
 
 
 
 
 
-=head2 TA_RSI
+=head2 ta_rsi
 
 =for sig
 
@@ -1765,7 +1765,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Relative Strength Index
 
-  $outpdl = TA_RSI($inpdl, $InTimePeriod);
+  $outpdl = ta_rsi($inpdl, $InTimePeriod);
 
  # $inpdl - 1D piddle with input data
  # $InTimePeriod [Number of period] - integer
@@ -1776,7 +1776,7 @@ Relative Strength Index
 
 =for bad
 
-TA_RSI processes bad values.
+ta_rsi processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -1787,13 +1787,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_RSI = \&PDL::TA_RSI;
+*ta_rsi = \&PDL::ta_rsi;
 
 
 
 
 
-=head2 TA_STOCH
+=head2 ta_stoch
 
 =for sig
 
@@ -1801,7 +1801,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Stochastic
 
-  ($outSlowK, $outSlowD) = TA_STOCH($high, $low, $close, $InFastK_Period, $InSlowK_Period, $InSlowK_MAType, $InSlowD_Period, $InSlowD_MAType);
+  ($outSlowK, $outSlowD) = ta_stoch($high, $low, $close, $InFastK_Period, $InSlowK_Period, $InSlowK_MAType, $InSlowD_Period, $InSlowD_MAType);
 
  # $high, $low, $close - 1D piddles, all have to be the same size
  # $InFastK_Period [Time period for building the Fast-K line] - integer
@@ -1825,7 +1825,7 @@ Stochastic
 
 =for bad
 
-TA_STOCH processes bad values.
+ta_stoch processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -1836,13 +1836,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_STOCH = \&PDL::TA_STOCH;
+*ta_stoch = \&PDL::ta_stoch;
 
 
 
 
 
-=head2 TA_STOCHF
+=head2 ta_stochf
 
 =for sig
 
@@ -1850,7 +1850,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Stochastic Fast
 
-  ($outFastK, $outFastD) = TA_STOCHF($high, $low, $close, $InFastK_Period, $InFastD_Period, $InFastD_MAType);
+  ($outFastK, $outFastD) = ta_stochf($high, $low, $close, $InFastK_Period, $InFastD_Period, $InFastD_MAType);
 
  # $high, $low, $close - 1D piddles, all have to be the same size
  # $InFastK_Period [Time period for building the Fast-K line] - integer
@@ -1868,7 +1868,7 @@ Stochastic Fast
 
 =for bad
 
-TA_STOCHF processes bad values.
+ta_stochf processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -1879,13 +1879,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_STOCHF = \&PDL::TA_STOCHF;
+*ta_stochf = \&PDL::ta_stochf;
 
 
 
 
 
-=head2 TA_STOCHRSI
+=head2 ta_stochrsi
 
 =for sig
 
@@ -1893,7 +1893,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Stochastic Relative Strength Index
 
-  ($outFastK, $outFastD) = TA_STOCHRSI($inpdl, $InTimePeriod, $InFastK_Period, $InFastD_Period, $InFastD_MAType);
+  ($outFastK, $outFastD) = ta_stochrsi($inpdl, $InTimePeriod, $InFastK_Period, $InFastD_Period, $InFastD_MAType);
 
  # $inpdl - 1D piddle with input data
  # $InTimePeriod [Number of period] - integer
@@ -1914,7 +1914,7 @@ Stochastic Relative Strength Index
 
 =for bad
 
-TA_STOCHRSI processes bad values.
+ta_stochrsi processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -1925,13 +1925,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_STOCHRSI = \&PDL::TA_STOCHRSI;
+*ta_stochrsi = \&PDL::ta_stochrsi;
 
 
 
 
 
-=head2 TA_TRIX
+=head2 ta_trix
 
 =for sig
 
@@ -1939,7 +1939,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 1-day Rate-Of-Change (ROC of a Triple Smooth EMA)
 
-  $outpdl = TA_TRIX($inpdl, $InTimePeriod);
+  $outpdl = ta_trix($inpdl, $InTimePeriod);
 
  # $inpdl - 1D piddle with input data
  # $InTimePeriod [Number of period] - integer
@@ -1950,7 +1950,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 =for bad
 
-TA_TRIX processes bad values.
+ta_trix processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -1961,13 +1961,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_TRIX = \&PDL::TA_TRIX;
+*ta_trix = \&PDL::ta_trix;
 
 
 
 
 
-=head2 TA_ULTOSC
+=head2 ta_ultosc
 
 =for sig
 
@@ -1975,7 +1975,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Ultimate Oscillator
 
-  $outpdl = TA_ULTOSC($high, $low, $close, $InTimePeriod1, $InTimePeriod2, $InTimePeriod3);
+  $outpdl = ta_ultosc($high, $low, $close, $InTimePeriod1, $InTimePeriod2, $InTimePeriod3);
 
  # $high, $low, $close - 1D piddles, all have to be the same size
  # $InTimePeriod1 [Number of bars for 1st period.] - integer
@@ -1992,7 +1992,7 @@ Ultimate Oscillator
 
 =for bad
 
-TA_ULTOSC processes bad values.
+ta_ultosc processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -2003,13 +2003,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_ULTOSC = \&PDL::TA_ULTOSC;
+*ta_ultosc = \&PDL::ta_ultosc;
 
 
 
 
 
-=head2 TA_WILLR
+=head2 ta_willr
 
 =for sig
 
@@ -2017,7 +2017,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Williams' %R
 
-  $outpdl = TA_WILLR($high, $low, $close, $InTimePeriod);
+  $outpdl = ta_willr($high, $low, $close, $InTimePeriod);
 
  # $high, $low, $close - 1D piddles, all have to be the same size
  # $InTimePeriod [Number of period] - integer
@@ -2028,7 +2028,7 @@ Williams' %R
 
 =for bad
 
-TA_WILLR processes bad values.
+ta_willr processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -2039,13 +2039,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_WILLR = \&PDL::TA_WILLR;
+*ta_willr = \&PDL::ta_willr;
 
 
 
 
 
-=head2 TA_HT_DCPERIOD
+=head2 ta_ht_dcperiod
 
 =for sig
 
@@ -2053,7 +2053,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Hilbert Transform - Dominant Cycle Period
 
-  $outpdl = TA_HT_DCPERIOD($inpdl);
+  $outpdl = ta_ht_dcperiod($inpdl);
 
  # $inpdl - 1D piddle with input data
  # returns: $outpdl - 1D piddle
@@ -2061,7 +2061,7 @@ Hilbert Transform - Dominant Cycle Period
 
 =for bad
 
-TA_HT_DCPERIOD processes bad values.
+ta_ht_dcperiod processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -2072,13 +2072,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_HT_DCPERIOD = \&PDL::TA_HT_DCPERIOD;
+*ta_ht_dcperiod = \&PDL::ta_ht_dcperiod;
 
 
 
 
 
-=head2 TA_HT_DCPHASE
+=head2 ta_ht_dcphase
 
 =for sig
 
@@ -2086,7 +2086,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Hilbert Transform - Dominant Cycle Phase
 
-  $outpdl = TA_HT_DCPHASE($inpdl);
+  $outpdl = ta_ht_dcphase($inpdl);
 
  # $inpdl - 1D piddle with input data
  # returns: $outpdl - 1D piddle
@@ -2094,7 +2094,7 @@ Hilbert Transform - Dominant Cycle Phase
 
 =for bad
 
-TA_HT_DCPHASE processes bad values.
+ta_ht_dcphase processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -2105,13 +2105,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_HT_DCPHASE = \&PDL::TA_HT_DCPHASE;
+*ta_ht_dcphase = \&PDL::ta_ht_dcphase;
 
 
 
 
 
-=head2 TA_HT_PHASOR
+=head2 ta_ht_phasor
 
 =for sig
 
@@ -2119,7 +2119,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Hilbert Transform - Phasor Components
 
-  ($outInPhase, $outQuadrature) = TA_HT_PHASOR($inpdl);
+  ($outInPhase, $outQuadrature) = ta_ht_phasor($inpdl);
 
  # $inpdl - 1D piddle with input data
  # returns: $outInPhase - 1D piddle
@@ -2128,7 +2128,7 @@ Hilbert Transform - Phasor Components
 
 =for bad
 
-TA_HT_PHASOR processes bad values.
+ta_ht_phasor processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -2139,13 +2139,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_HT_PHASOR = \&PDL::TA_HT_PHASOR;
+*ta_ht_phasor = \&PDL::ta_ht_phasor;
 
 
 
 
 
-=head2 TA_HT_SINE
+=head2 ta_ht_sine
 
 =for sig
 
@@ -2153,7 +2153,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Hilbert Transform - SineWave
 
-  ($outSine, $outLeadSine) = TA_HT_SINE($inpdl);
+  ($outSine, $outLeadSine) = ta_ht_sine($inpdl);
 
  # $inpdl - 1D piddle with input data
  # returns: $outSine - 1D piddle
@@ -2162,7 +2162,7 @@ Hilbert Transform - SineWave
 
 =for bad
 
-TA_HT_SINE processes bad values.
+ta_ht_sine processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -2173,13 +2173,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_HT_SINE = \&PDL::TA_HT_SINE;
+*ta_ht_sine = \&PDL::ta_ht_sine;
 
 
 
 
 
-=head2 TA_HT_TRENDMODE
+=head2 ta_ht_trendmode
 
 =for sig
 
@@ -2187,7 +2187,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Hilbert Transform - Trend vs Cycle Mode
 
-  $outInteger = TA_HT_TRENDMODE($inpdl);
+  $outInteger = ta_ht_trendmode($inpdl);
 
  # $inpdl - 1D piddle with input data
  # returns: $outInteger - 1D piddle
@@ -2195,7 +2195,7 @@ Hilbert Transform - Trend vs Cycle Mode
 
 =for bad
 
-TA_HT_TRENDMODE processes bad values.
+ta_ht_trendmode processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -2206,13 +2206,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_HT_TRENDMODE = \&PDL::TA_HT_TRENDMODE;
+*ta_ht_trendmode = \&PDL::ta_ht_trendmode;
 
 
 
 
 
-=head2 TA_AD
+=head2 ta_ad
 
 =for sig
 
@@ -2220,7 +2220,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Chaikin A/D Line
 
-  $outpdl = TA_AD($high, $low, $close, $volume);
+  $outpdl = ta_ad($high, $low, $close, $volume);
 
  # $high, $low, $close, $volume - 1D piddles, all have to be the same size
  # returns: $outpdl - 1D piddle
@@ -2228,7 +2228,7 @@ Chaikin A/D Line
 
 =for bad
 
-TA_AD processes bad values.
+ta_ad processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -2239,13 +2239,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_AD = \&PDL::TA_AD;
+*ta_ad = \&PDL::ta_ad;
 
 
 
 
 
-=head2 TA_ADOSC
+=head2 ta_adosc
 
 =for sig
 
@@ -2253,7 +2253,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Chaikin A/D Oscillator
 
-  $outpdl = TA_ADOSC($high, $low, $close, $volume, $InFastPeriod, $InSlowPeriod);
+  $outpdl = ta_adosc($high, $low, $close, $volume, $InFastPeriod, $InSlowPeriod);
 
  # $high, $low, $close, $volume - 1D piddles, all have to be the same size
  # $InFastPeriod [Number of period for the fast MA] - integer
@@ -2267,7 +2267,7 @@ Chaikin A/D Oscillator
 
 =for bad
 
-TA_ADOSC processes bad values.
+ta_adosc processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -2278,13 +2278,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_ADOSC = \&PDL::TA_ADOSC;
+*ta_adosc = \&PDL::ta_adosc;
 
 
 
 
 
-=head2 TA_OBV
+=head2 ta_obv
 
 =for sig
 
@@ -2292,7 +2292,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 On Balance Volume
 
-  $outpdl = TA_OBV($inpdl, $volume);
+  $outpdl = ta_obv($inpdl, $volume);
 
  # $inpdl - 1D piddle with input data
  # $volume - 1D piddle
@@ -2301,7 +2301,7 @@ On Balance Volume
 
 =for bad
 
-TA_OBV processes bad values.
+ta_obv processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -2312,13 +2312,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_OBV = \&PDL::TA_OBV;
+*ta_obv = \&PDL::ta_obv;
 
 
 
 
 
-=head2 TA_CDL2CROWS
+=head2 ta_cdl2crows
 
 =for sig
 
@@ -2326,7 +2326,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Two Crows
 
-  $outInteger = TA_CDL2CROWS($open, $high, $low, $close);
+  $outInteger = ta_cdl2crows($open, $high, $low, $close);
 
  # $open, $high, $low, $close - 1D piddles, all have to be the same size
  # returns: $outInteger - 1D piddle
@@ -2334,7 +2334,7 @@ Two Crows
 
 =for bad
 
-TA_CDL2CROWS processes bad values.
+ta_cdl2crows processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -2345,13 +2345,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_CDL2CROWS = \&PDL::TA_CDL2CROWS;
+*ta_cdl2crows = \&PDL::ta_cdl2crows;
 
 
 
 
 
-=head2 TA_CDL3BLACKCROWS
+=head2 ta_cdl3blackcrows
 
 =for sig
 
@@ -2359,7 +2359,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Three Black Crows
 
-  $outInteger = TA_CDL3BLACKCROWS($open, $high, $low, $close);
+  $outInteger = ta_cdl3blackcrows($open, $high, $low, $close);
 
  # $open, $high, $low, $close - 1D piddles, all have to be the same size
  # returns: $outInteger - 1D piddle
@@ -2367,7 +2367,7 @@ Three Black Crows
 
 =for bad
 
-TA_CDL3BLACKCROWS processes bad values.
+ta_cdl3blackcrows processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -2378,13 +2378,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_CDL3BLACKCROWS = \&PDL::TA_CDL3BLACKCROWS;
+*ta_cdl3blackcrows = \&PDL::ta_cdl3blackcrows;
 
 
 
 
 
-=head2 TA_CDL3INSIDE
+=head2 ta_cdl3inside
 
 =for sig
 
@@ -2392,7 +2392,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Three Inside Up/Down
 
-  $outInteger = TA_CDL3INSIDE($open, $high, $low, $close);
+  $outInteger = ta_cdl3inside($open, $high, $low, $close);
 
  # $open, $high, $low, $close - 1D piddles, all have to be the same size
  # returns: $outInteger - 1D piddle
@@ -2400,7 +2400,7 @@ Three Inside Up/Down
 
 =for bad
 
-TA_CDL3INSIDE processes bad values.
+ta_cdl3inside processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -2411,13 +2411,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_CDL3INSIDE = \&PDL::TA_CDL3INSIDE;
+*ta_cdl3inside = \&PDL::ta_cdl3inside;
 
 
 
 
 
-=head2 TA_CDL3LINESTRIKE
+=head2 ta_cdl3linestrike
 
 =for sig
 
@@ -2425,7 +2425,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Three-Line Strike
 
-  $outInteger = TA_CDL3LINESTRIKE($open, $high, $low, $close);
+  $outInteger = ta_cdl3linestrike($open, $high, $low, $close);
 
  # $open, $high, $low, $close - 1D piddles, all have to be the same size
  # returns: $outInteger - 1D piddle
@@ -2433,7 +2433,7 @@ Three-Line Strike
 
 =for bad
 
-TA_CDL3LINESTRIKE processes bad values.
+ta_cdl3linestrike processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -2444,13 +2444,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_CDL3LINESTRIKE = \&PDL::TA_CDL3LINESTRIKE;
+*ta_cdl3linestrike = \&PDL::ta_cdl3linestrike;
 
 
 
 
 
-=head2 TA_CDL3OUTSIDE
+=head2 ta_cdl3outside
 
 =for sig
 
@@ -2458,7 +2458,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Three Outside Up/Down
 
-  $outInteger = TA_CDL3OUTSIDE($open, $high, $low, $close);
+  $outInteger = ta_cdl3outside($open, $high, $low, $close);
 
  # $open, $high, $low, $close - 1D piddles, all have to be the same size
  # returns: $outInteger - 1D piddle
@@ -2466,7 +2466,7 @@ Three Outside Up/Down
 
 =for bad
 
-TA_CDL3OUTSIDE processes bad values.
+ta_cdl3outside processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -2477,13 +2477,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_CDL3OUTSIDE = \&PDL::TA_CDL3OUTSIDE;
+*ta_cdl3outside = \&PDL::ta_cdl3outside;
 
 
 
 
 
-=head2 TA_CDL3STARSINSOUTH
+=head2 ta_cdl3starsinsouth
 
 =for sig
 
@@ -2491,7 +2491,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Three Stars In The South
 
-  $outInteger = TA_CDL3STARSINSOUTH($open, $high, $low, $close);
+  $outInteger = ta_cdl3starsinsouth($open, $high, $low, $close);
 
  # $open, $high, $low, $close - 1D piddles, all have to be the same size
  # returns: $outInteger - 1D piddle
@@ -2499,7 +2499,7 @@ Three Stars In The South
 
 =for bad
 
-TA_CDL3STARSINSOUTH processes bad values.
+ta_cdl3starsinsouth processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -2510,13 +2510,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_CDL3STARSINSOUTH = \&PDL::TA_CDL3STARSINSOUTH;
+*ta_cdl3starsinsouth = \&PDL::ta_cdl3starsinsouth;
 
 
 
 
 
-=head2 TA_CDL3WHITESOLDIERS
+=head2 ta_cdl3whitesoldiers
 
 =for sig
 
@@ -2524,7 +2524,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Three Advancing White Soldiers
 
-  $outInteger = TA_CDL3WHITESOLDIERS($open, $high, $low, $close);
+  $outInteger = ta_cdl3whitesoldiers($open, $high, $low, $close);
 
  # $open, $high, $low, $close - 1D piddles, all have to be the same size
  # returns: $outInteger - 1D piddle
@@ -2532,7 +2532,7 @@ Three Advancing White Soldiers
 
 =for bad
 
-TA_CDL3WHITESOLDIERS processes bad values.
+ta_cdl3whitesoldiers processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -2543,13 +2543,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_CDL3WHITESOLDIERS = \&PDL::TA_CDL3WHITESOLDIERS;
+*ta_cdl3whitesoldiers = \&PDL::ta_cdl3whitesoldiers;
 
 
 
 
 
-=head2 TA_CDLABANDONEDBABY
+=head2 ta_cdlabandonedbaby
 
 =for sig
 
@@ -2557,7 +2557,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Abandoned Baby
 
-  $outInteger = TA_CDLABANDONEDBABY($open, $high, $low, $close, $InPenetration);
+  $outInteger = ta_cdlabandonedbaby($open, $high, $low, $close, $InPenetration);
 
  # $open, $high, $low, $close - 1D piddles, all have to be the same size
  # $InPenetration [Percentage of penetration of a candle within another candle] - real number
@@ -2568,7 +2568,7 @@ Abandoned Baby
 
 =for bad
 
-TA_CDLABANDONEDBABY processes bad values.
+ta_cdlabandonedbaby processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -2579,13 +2579,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_CDLABANDONEDBABY = \&PDL::TA_CDLABANDONEDBABY;
+*ta_cdlabandonedbaby = \&PDL::ta_cdlabandonedbaby;
 
 
 
 
 
-=head2 TA_CDLADVANCEBLOCK
+=head2 ta_cdladvanceblock
 
 =for sig
 
@@ -2593,7 +2593,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Advance Block
 
-  $outInteger = TA_CDLADVANCEBLOCK($open, $high, $low, $close);
+  $outInteger = ta_cdladvanceblock($open, $high, $low, $close);
 
  # $open, $high, $low, $close - 1D piddles, all have to be the same size
  # returns: $outInteger - 1D piddle
@@ -2601,7 +2601,7 @@ Advance Block
 
 =for bad
 
-TA_CDLADVANCEBLOCK processes bad values.
+ta_cdladvanceblock processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -2612,13 +2612,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_CDLADVANCEBLOCK = \&PDL::TA_CDLADVANCEBLOCK;
+*ta_cdladvanceblock = \&PDL::ta_cdladvanceblock;
 
 
 
 
 
-=head2 TA_CDLBELTHOLD
+=head2 ta_cdlbelthold
 
 =for sig
 
@@ -2626,7 +2626,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Belt-hold
 
-  $outInteger = TA_CDLBELTHOLD($open, $high, $low, $close);
+  $outInteger = ta_cdlbelthold($open, $high, $low, $close);
 
  # $open, $high, $low, $close - 1D piddles, all have to be the same size
  # returns: $outInteger - 1D piddle
@@ -2634,7 +2634,7 @@ Belt-hold
 
 =for bad
 
-TA_CDLBELTHOLD processes bad values.
+ta_cdlbelthold processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -2645,13 +2645,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_CDLBELTHOLD = \&PDL::TA_CDLBELTHOLD;
+*ta_cdlbelthold = \&PDL::ta_cdlbelthold;
 
 
 
 
 
-=head2 TA_CDLBREAKAWAY
+=head2 ta_cdlbreakaway
 
 =for sig
 
@@ -2659,7 +2659,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Breakaway
 
-  $outInteger = TA_CDLBREAKAWAY($open, $high, $low, $close);
+  $outInteger = ta_cdlbreakaway($open, $high, $low, $close);
 
  # $open, $high, $low, $close - 1D piddles, all have to be the same size
  # returns: $outInteger - 1D piddle
@@ -2667,7 +2667,7 @@ Breakaway
 
 =for bad
 
-TA_CDLBREAKAWAY processes bad values.
+ta_cdlbreakaway processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -2678,13 +2678,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_CDLBREAKAWAY = \&PDL::TA_CDLBREAKAWAY;
+*ta_cdlbreakaway = \&PDL::ta_cdlbreakaway;
 
 
 
 
 
-=head2 TA_CDLCLOSINGMARUBOZU
+=head2 ta_cdlclosingmarubozu
 
 =for sig
 
@@ -2692,7 +2692,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Closing Marubozu
 
-  $outInteger = TA_CDLCLOSINGMARUBOZU($open, $high, $low, $close);
+  $outInteger = ta_cdlclosingmarubozu($open, $high, $low, $close);
 
  # $open, $high, $low, $close - 1D piddles, all have to be the same size
  # returns: $outInteger - 1D piddle
@@ -2700,7 +2700,7 @@ Closing Marubozu
 
 =for bad
 
-TA_CDLCLOSINGMARUBOZU processes bad values.
+ta_cdlclosingmarubozu processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -2711,13 +2711,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_CDLCLOSINGMARUBOZU = \&PDL::TA_CDLCLOSINGMARUBOZU;
+*ta_cdlclosingmarubozu = \&PDL::ta_cdlclosingmarubozu;
 
 
 
 
 
-=head2 TA_CDLCONCEALBABYSWALL
+=head2 ta_cdlconcealbabyswall
 
 =for sig
 
@@ -2725,7 +2725,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Concealing Baby Swallow
 
-  $outInteger = TA_CDLCONCEALBABYSWALL($open, $high, $low, $close);
+  $outInteger = ta_cdlconcealbabyswall($open, $high, $low, $close);
 
  # $open, $high, $low, $close - 1D piddles, all have to be the same size
  # returns: $outInteger - 1D piddle
@@ -2733,7 +2733,7 @@ Concealing Baby Swallow
 
 =for bad
 
-TA_CDLCONCEALBABYSWALL processes bad values.
+ta_cdlconcealbabyswall processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -2744,13 +2744,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_CDLCONCEALBABYSWALL = \&PDL::TA_CDLCONCEALBABYSWALL;
+*ta_cdlconcealbabyswall = \&PDL::ta_cdlconcealbabyswall;
 
 
 
 
 
-=head2 TA_CDLCOUNTERATTACK
+=head2 ta_cdlcounterattack
 
 =for sig
 
@@ -2758,7 +2758,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Counterattack
 
-  $outInteger = TA_CDLCOUNTERATTACK($open, $high, $low, $close);
+  $outInteger = ta_cdlcounterattack($open, $high, $low, $close);
 
  # $open, $high, $low, $close - 1D piddles, all have to be the same size
  # returns: $outInteger - 1D piddle
@@ -2766,7 +2766,7 @@ Counterattack
 
 =for bad
 
-TA_CDLCOUNTERATTACK processes bad values.
+ta_cdlcounterattack processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -2777,13 +2777,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_CDLCOUNTERATTACK = \&PDL::TA_CDLCOUNTERATTACK;
+*ta_cdlcounterattack = \&PDL::ta_cdlcounterattack;
 
 
 
 
 
-=head2 TA_CDLDARKCLOUDCOVER
+=head2 ta_cdldarkcloudcover
 
 =for sig
 
@@ -2791,7 +2791,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Dark Cloud Cover
 
-  $outInteger = TA_CDLDARKCLOUDCOVER($open, $high, $low, $close, $InPenetration);
+  $outInteger = ta_cdldarkcloudcover($open, $high, $low, $close, $InPenetration);
 
  # $open, $high, $low, $close - 1D piddles, all have to be the same size
  # $InPenetration [Percentage of penetration of a candle within another candle] - real number
@@ -2802,7 +2802,7 @@ Dark Cloud Cover
 
 =for bad
 
-TA_CDLDARKCLOUDCOVER processes bad values.
+ta_cdldarkcloudcover processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -2813,13 +2813,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_CDLDARKCLOUDCOVER = \&PDL::TA_CDLDARKCLOUDCOVER;
+*ta_cdldarkcloudcover = \&PDL::ta_cdldarkcloudcover;
 
 
 
 
 
-=head2 TA_CDLDOJI
+=head2 ta_cdldoji
 
 =for sig
 
@@ -2827,7 +2827,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Doji
 
-  $outInteger = TA_CDLDOJI($open, $high, $low, $close);
+  $outInteger = ta_cdldoji($open, $high, $low, $close);
 
  # $open, $high, $low, $close - 1D piddles, all have to be the same size
  # returns: $outInteger - 1D piddle
@@ -2835,7 +2835,7 @@ Doji
 
 =for bad
 
-TA_CDLDOJI processes bad values.
+ta_cdldoji processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -2846,13 +2846,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_CDLDOJI = \&PDL::TA_CDLDOJI;
+*ta_cdldoji = \&PDL::ta_cdldoji;
 
 
 
 
 
-=head2 TA_CDLDOJISTAR
+=head2 ta_cdldojistar
 
 =for sig
 
@@ -2860,7 +2860,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Doji Star
 
-  $outInteger = TA_CDLDOJISTAR($open, $high, $low, $close);
+  $outInteger = ta_cdldojistar($open, $high, $low, $close);
 
  # $open, $high, $low, $close - 1D piddles, all have to be the same size
  # returns: $outInteger - 1D piddle
@@ -2868,7 +2868,7 @@ Doji Star
 
 =for bad
 
-TA_CDLDOJISTAR processes bad values.
+ta_cdldojistar processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -2879,13 +2879,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_CDLDOJISTAR = \&PDL::TA_CDLDOJISTAR;
+*ta_cdldojistar = \&PDL::ta_cdldojistar;
 
 
 
 
 
-=head2 TA_CDLDRAGONFLYDOJI
+=head2 ta_cdldragonflydoji
 
 =for sig
 
@@ -2893,7 +2893,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Dragonfly Doji
 
-  $outInteger = TA_CDLDRAGONFLYDOJI($open, $high, $low, $close);
+  $outInteger = ta_cdldragonflydoji($open, $high, $low, $close);
 
  # $open, $high, $low, $close - 1D piddles, all have to be the same size
  # returns: $outInteger - 1D piddle
@@ -2901,7 +2901,7 @@ Dragonfly Doji
 
 =for bad
 
-TA_CDLDRAGONFLYDOJI processes bad values.
+ta_cdldragonflydoji processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -2912,13 +2912,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_CDLDRAGONFLYDOJI = \&PDL::TA_CDLDRAGONFLYDOJI;
+*ta_cdldragonflydoji = \&PDL::ta_cdldragonflydoji;
 
 
 
 
 
-=head2 TA_CDLENGULFING
+=head2 ta_cdlengulfing
 
 =for sig
 
@@ -2926,7 +2926,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Engulfing Pattern
 
-  $outInteger = TA_CDLENGULFING($open, $high, $low, $close);
+  $outInteger = ta_cdlengulfing($open, $high, $low, $close);
 
  # $open, $high, $low, $close - 1D piddles, all have to be the same size
  # returns: $outInteger - 1D piddle
@@ -2934,7 +2934,7 @@ Engulfing Pattern
 
 =for bad
 
-TA_CDLENGULFING processes bad values.
+ta_cdlengulfing processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -2945,13 +2945,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_CDLENGULFING = \&PDL::TA_CDLENGULFING;
+*ta_cdlengulfing = \&PDL::ta_cdlengulfing;
 
 
 
 
 
-=head2 TA_CDLEVENINGDOJISTAR
+=head2 ta_cdleveningdojistar
 
 =for sig
 
@@ -2959,7 +2959,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Evening Doji Star
 
-  $outInteger = TA_CDLEVENINGDOJISTAR($open, $high, $low, $close, $InPenetration);
+  $outInteger = ta_cdleveningdojistar($open, $high, $low, $close, $InPenetration);
 
  # $open, $high, $low, $close - 1D piddles, all have to be the same size
  # $InPenetration [Percentage of penetration of a candle within another candle] - real number
@@ -2970,7 +2970,7 @@ Evening Doji Star
 
 =for bad
 
-TA_CDLEVENINGDOJISTAR processes bad values.
+ta_cdleveningdojistar processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -2981,13 +2981,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_CDLEVENINGDOJISTAR = \&PDL::TA_CDLEVENINGDOJISTAR;
+*ta_cdleveningdojistar = \&PDL::ta_cdleveningdojistar;
 
 
 
 
 
-=head2 TA_CDLEVENINGSTAR
+=head2 ta_cdleveningstar
 
 =for sig
 
@@ -2995,7 +2995,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Evening Star
 
-  $outInteger = TA_CDLEVENINGSTAR($open, $high, $low, $close, $InPenetration);
+  $outInteger = ta_cdleveningstar($open, $high, $low, $close, $InPenetration);
 
  # $open, $high, $low, $close - 1D piddles, all have to be the same size
  # $InPenetration [Percentage of penetration of a candle within another candle] - real number
@@ -3006,7 +3006,7 @@ Evening Star
 
 =for bad
 
-TA_CDLEVENINGSTAR processes bad values.
+ta_cdleveningstar processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -3017,13 +3017,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_CDLEVENINGSTAR = \&PDL::TA_CDLEVENINGSTAR;
+*ta_cdleveningstar = \&PDL::ta_cdleveningstar;
 
 
 
 
 
-=head2 TA_CDLGAPSIDESIDEWHITE
+=head2 ta_cdlgapsidesidewhite
 
 =for sig
 
@@ -3031,7 +3031,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Up/Down-gap side-by-side white lines
 
-  $outInteger = TA_CDLGAPSIDESIDEWHITE($open, $high, $low, $close);
+  $outInteger = ta_cdlgapsidesidewhite($open, $high, $low, $close);
 
  # $open, $high, $low, $close - 1D piddles, all have to be the same size
  # returns: $outInteger - 1D piddle
@@ -3039,7 +3039,7 @@ Up/Down-gap side-by-side white lines
 
 =for bad
 
-TA_CDLGAPSIDESIDEWHITE processes bad values.
+ta_cdlgapsidesidewhite processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -3050,13 +3050,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_CDLGAPSIDESIDEWHITE = \&PDL::TA_CDLGAPSIDESIDEWHITE;
+*ta_cdlgapsidesidewhite = \&PDL::ta_cdlgapsidesidewhite;
 
 
 
 
 
-=head2 TA_CDLGRAVESTONEDOJI
+=head2 ta_cdlgravestonedoji
 
 =for sig
 
@@ -3064,7 +3064,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Gravestone Doji
 
-  $outInteger = TA_CDLGRAVESTONEDOJI($open, $high, $low, $close);
+  $outInteger = ta_cdlgravestonedoji($open, $high, $low, $close);
 
  # $open, $high, $low, $close - 1D piddles, all have to be the same size
  # returns: $outInteger - 1D piddle
@@ -3072,7 +3072,7 @@ Gravestone Doji
 
 =for bad
 
-TA_CDLGRAVESTONEDOJI processes bad values.
+ta_cdlgravestonedoji processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -3083,13 +3083,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_CDLGRAVESTONEDOJI = \&PDL::TA_CDLGRAVESTONEDOJI;
+*ta_cdlgravestonedoji = \&PDL::ta_cdlgravestonedoji;
 
 
 
 
 
-=head2 TA_CDLHAMMER
+=head2 ta_cdlhammer
 
 =for sig
 
@@ -3097,7 +3097,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Hammer
 
-  $outInteger = TA_CDLHAMMER($open, $high, $low, $close);
+  $outInteger = ta_cdlhammer($open, $high, $low, $close);
 
  # $open, $high, $low, $close - 1D piddles, all have to be the same size
  # returns: $outInteger - 1D piddle
@@ -3105,7 +3105,7 @@ Hammer
 
 =for bad
 
-TA_CDLHAMMER processes bad values.
+ta_cdlhammer processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -3116,13 +3116,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_CDLHAMMER = \&PDL::TA_CDLHAMMER;
+*ta_cdlhammer = \&PDL::ta_cdlhammer;
 
 
 
 
 
-=head2 TA_CDLHANGINGMAN
+=head2 ta_cdlhangingman
 
 =for sig
 
@@ -3130,7 +3130,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Hanging Man
 
-  $outInteger = TA_CDLHANGINGMAN($open, $high, $low, $close);
+  $outInteger = ta_cdlhangingman($open, $high, $low, $close);
 
  # $open, $high, $low, $close - 1D piddles, all have to be the same size
  # returns: $outInteger - 1D piddle
@@ -3138,7 +3138,7 @@ Hanging Man
 
 =for bad
 
-TA_CDLHANGINGMAN processes bad values.
+ta_cdlhangingman processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -3149,13 +3149,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_CDLHANGINGMAN = \&PDL::TA_CDLHANGINGMAN;
+*ta_cdlhangingman = \&PDL::ta_cdlhangingman;
 
 
 
 
 
-=head2 TA_CDLHARAMI
+=head2 ta_cdlharami
 
 =for sig
 
@@ -3163,7 +3163,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Harami Pattern
 
-  $outInteger = TA_CDLHARAMI($open, $high, $low, $close);
+  $outInteger = ta_cdlharami($open, $high, $low, $close);
 
  # $open, $high, $low, $close - 1D piddles, all have to be the same size
  # returns: $outInteger - 1D piddle
@@ -3171,7 +3171,7 @@ Harami Pattern
 
 =for bad
 
-TA_CDLHARAMI processes bad values.
+ta_cdlharami processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -3182,13 +3182,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_CDLHARAMI = \&PDL::TA_CDLHARAMI;
+*ta_cdlharami = \&PDL::ta_cdlharami;
 
 
 
 
 
-=head2 TA_CDLHARAMICROSS
+=head2 ta_cdlharamicross
 
 =for sig
 
@@ -3196,7 +3196,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Harami Cross Pattern
 
-  $outInteger = TA_CDLHARAMICROSS($open, $high, $low, $close);
+  $outInteger = ta_cdlharamicross($open, $high, $low, $close);
 
  # $open, $high, $low, $close - 1D piddles, all have to be the same size
  # returns: $outInteger - 1D piddle
@@ -3204,7 +3204,7 @@ Harami Cross Pattern
 
 =for bad
 
-TA_CDLHARAMICROSS processes bad values.
+ta_cdlharamicross processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -3215,13 +3215,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_CDLHARAMICROSS = \&PDL::TA_CDLHARAMICROSS;
+*ta_cdlharamicross = \&PDL::ta_cdlharamicross;
 
 
 
 
 
-=head2 TA_CDLHIGHWAVE
+=head2 ta_cdlhighwave
 
 =for sig
 
@@ -3229,7 +3229,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 High-Wave Candle
 
-  $outInteger = TA_CDLHIGHWAVE($open, $high, $low, $close);
+  $outInteger = ta_cdlhighwave($open, $high, $low, $close);
 
  # $open, $high, $low, $close - 1D piddles, all have to be the same size
  # returns: $outInteger - 1D piddle
@@ -3237,7 +3237,7 @@ High-Wave Candle
 
 =for bad
 
-TA_CDLHIGHWAVE processes bad values.
+ta_cdlhighwave processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -3248,13 +3248,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_CDLHIGHWAVE = \&PDL::TA_CDLHIGHWAVE;
+*ta_cdlhighwave = \&PDL::ta_cdlhighwave;
 
 
 
 
 
-=head2 TA_CDLHIKKAKE
+=head2 ta_cdlhikkake
 
 =for sig
 
@@ -3262,7 +3262,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Hikkake Pattern
 
-  $outInteger = TA_CDLHIKKAKE($open, $high, $low, $close);
+  $outInteger = ta_cdlhikkake($open, $high, $low, $close);
 
  # $open, $high, $low, $close - 1D piddles, all have to be the same size
  # returns: $outInteger - 1D piddle
@@ -3270,7 +3270,7 @@ Hikkake Pattern
 
 =for bad
 
-TA_CDLHIKKAKE processes bad values.
+ta_cdlhikkake processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -3281,13 +3281,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_CDLHIKKAKE = \&PDL::TA_CDLHIKKAKE;
+*ta_cdlhikkake = \&PDL::ta_cdlhikkake;
 
 
 
 
 
-=head2 TA_CDLHIKKAKEMOD
+=head2 ta_cdlhikkakemod
 
 =for sig
 
@@ -3295,7 +3295,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Modified Hikkake Pattern
 
-  $outInteger = TA_CDLHIKKAKEMOD($open, $high, $low, $close);
+  $outInteger = ta_cdlhikkakemod($open, $high, $low, $close);
 
  # $open, $high, $low, $close - 1D piddles, all have to be the same size
  # returns: $outInteger - 1D piddle
@@ -3303,7 +3303,7 @@ Modified Hikkake Pattern
 
 =for bad
 
-TA_CDLHIKKAKEMOD processes bad values.
+ta_cdlhikkakemod processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -3314,13 +3314,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_CDLHIKKAKEMOD = \&PDL::TA_CDLHIKKAKEMOD;
+*ta_cdlhikkakemod = \&PDL::ta_cdlhikkakemod;
 
 
 
 
 
-=head2 TA_CDLHOMINGPIGEON
+=head2 ta_cdlhomingpigeon
 
 =for sig
 
@@ -3328,7 +3328,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Homing Pigeon
 
-  $outInteger = TA_CDLHOMINGPIGEON($open, $high, $low, $close);
+  $outInteger = ta_cdlhomingpigeon($open, $high, $low, $close);
 
  # $open, $high, $low, $close - 1D piddles, all have to be the same size
  # returns: $outInteger - 1D piddle
@@ -3336,7 +3336,7 @@ Homing Pigeon
 
 =for bad
 
-TA_CDLHOMINGPIGEON processes bad values.
+ta_cdlhomingpigeon processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -3347,13 +3347,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_CDLHOMINGPIGEON = \&PDL::TA_CDLHOMINGPIGEON;
+*ta_cdlhomingpigeon = \&PDL::ta_cdlhomingpigeon;
 
 
 
 
 
-=head2 TA_CDLIDENTICAL3CROWS
+=head2 ta_cdlidentical3crows
 
 =for sig
 
@@ -3361,7 +3361,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Identical Three Crows
 
-  $outInteger = TA_CDLIDENTICAL3CROWS($open, $high, $low, $close);
+  $outInteger = ta_cdlidentical3crows($open, $high, $low, $close);
 
  # $open, $high, $low, $close - 1D piddles, all have to be the same size
  # returns: $outInteger - 1D piddle
@@ -3369,7 +3369,7 @@ Identical Three Crows
 
 =for bad
 
-TA_CDLIDENTICAL3CROWS processes bad values.
+ta_cdlidentical3crows processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -3380,13 +3380,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_CDLIDENTICAL3CROWS = \&PDL::TA_CDLIDENTICAL3CROWS;
+*ta_cdlidentical3crows = \&PDL::ta_cdlidentical3crows;
 
 
 
 
 
-=head2 TA_CDLINNECK
+=head2 ta_cdlinneck
 
 =for sig
 
@@ -3394,7 +3394,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 In-Neck Pattern
 
-  $outInteger = TA_CDLINNECK($open, $high, $low, $close);
+  $outInteger = ta_cdlinneck($open, $high, $low, $close);
 
  # $open, $high, $low, $close - 1D piddles, all have to be the same size
  # returns: $outInteger - 1D piddle
@@ -3402,7 +3402,7 @@ In-Neck Pattern
 
 =for bad
 
-TA_CDLINNECK processes bad values.
+ta_cdlinneck processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -3413,13 +3413,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_CDLINNECK = \&PDL::TA_CDLINNECK;
+*ta_cdlinneck = \&PDL::ta_cdlinneck;
 
 
 
 
 
-=head2 TA_CDLINVERTEDHAMMER
+=head2 ta_cdlinvertedhammer
 
 =for sig
 
@@ -3427,7 +3427,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Inverted Hammer
 
-  $outInteger = TA_CDLINVERTEDHAMMER($open, $high, $low, $close);
+  $outInteger = ta_cdlinvertedhammer($open, $high, $low, $close);
 
  # $open, $high, $low, $close - 1D piddles, all have to be the same size
  # returns: $outInteger - 1D piddle
@@ -3435,7 +3435,7 @@ Inverted Hammer
 
 =for bad
 
-TA_CDLINVERTEDHAMMER processes bad values.
+ta_cdlinvertedhammer processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -3446,13 +3446,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_CDLINVERTEDHAMMER = \&PDL::TA_CDLINVERTEDHAMMER;
+*ta_cdlinvertedhammer = \&PDL::ta_cdlinvertedhammer;
 
 
 
 
 
-=head2 TA_CDLKICKING
+=head2 ta_cdlkicking
 
 =for sig
 
@@ -3460,7 +3460,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Kicking
 
-  $outInteger = TA_CDLKICKING($open, $high, $low, $close);
+  $outInteger = ta_cdlkicking($open, $high, $low, $close);
 
  # $open, $high, $low, $close - 1D piddles, all have to be the same size
  # returns: $outInteger - 1D piddle
@@ -3468,7 +3468,7 @@ Kicking
 
 =for bad
 
-TA_CDLKICKING processes bad values.
+ta_cdlkicking processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -3479,13 +3479,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_CDLKICKING = \&PDL::TA_CDLKICKING;
+*ta_cdlkicking = \&PDL::ta_cdlkicking;
 
 
 
 
 
-=head2 TA_CDLKICKINGBYLENGTH
+=head2 ta_cdlkickingbylength
 
 =for sig
 
@@ -3493,7 +3493,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Kicking - bull/bear determined by the longer marubozu
 
-  $outInteger = TA_CDLKICKINGBYLENGTH($open, $high, $low, $close);
+  $outInteger = ta_cdlkickingbylength($open, $high, $low, $close);
 
  # $open, $high, $low, $close - 1D piddles, all have to be the same size
  # returns: $outInteger - 1D piddle
@@ -3501,7 +3501,7 @@ Kicking - bull/bear determined by the longer marubozu
 
 =for bad
 
-TA_CDLKICKINGBYLENGTH processes bad values.
+ta_cdlkickingbylength processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -3512,13 +3512,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_CDLKICKINGBYLENGTH = \&PDL::TA_CDLKICKINGBYLENGTH;
+*ta_cdlkickingbylength = \&PDL::ta_cdlkickingbylength;
 
 
 
 
 
-=head2 TA_CDLLADDERBOTTOM
+=head2 ta_cdlladderbottom
 
 =for sig
 
@@ -3526,7 +3526,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Ladder Bottom
 
-  $outInteger = TA_CDLLADDERBOTTOM($open, $high, $low, $close);
+  $outInteger = ta_cdlladderbottom($open, $high, $low, $close);
 
  # $open, $high, $low, $close - 1D piddles, all have to be the same size
  # returns: $outInteger - 1D piddle
@@ -3534,7 +3534,7 @@ Ladder Bottom
 
 =for bad
 
-TA_CDLLADDERBOTTOM processes bad values.
+ta_cdlladderbottom processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -3545,13 +3545,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_CDLLADDERBOTTOM = \&PDL::TA_CDLLADDERBOTTOM;
+*ta_cdlladderbottom = \&PDL::ta_cdlladderbottom;
 
 
 
 
 
-=head2 TA_CDLLONGLEGGEDDOJI
+=head2 ta_cdllongleggeddoji
 
 =for sig
 
@@ -3559,7 +3559,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Long Legged Doji
 
-  $outInteger = TA_CDLLONGLEGGEDDOJI($open, $high, $low, $close);
+  $outInteger = ta_cdllongleggeddoji($open, $high, $low, $close);
 
  # $open, $high, $low, $close - 1D piddles, all have to be the same size
  # returns: $outInteger - 1D piddle
@@ -3567,7 +3567,7 @@ Long Legged Doji
 
 =for bad
 
-TA_CDLLONGLEGGEDDOJI processes bad values.
+ta_cdllongleggeddoji processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -3578,13 +3578,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_CDLLONGLEGGEDDOJI = \&PDL::TA_CDLLONGLEGGEDDOJI;
+*ta_cdllongleggeddoji = \&PDL::ta_cdllongleggeddoji;
 
 
 
 
 
-=head2 TA_CDLLONGLINE
+=head2 ta_cdllongline
 
 =for sig
 
@@ -3592,7 +3592,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Long Line Candle
 
-  $outInteger = TA_CDLLONGLINE($open, $high, $low, $close);
+  $outInteger = ta_cdllongline($open, $high, $low, $close);
 
  # $open, $high, $low, $close - 1D piddles, all have to be the same size
  # returns: $outInteger - 1D piddle
@@ -3600,7 +3600,7 @@ Long Line Candle
 
 =for bad
 
-TA_CDLLONGLINE processes bad values.
+ta_cdllongline processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -3611,13 +3611,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_CDLLONGLINE = \&PDL::TA_CDLLONGLINE;
+*ta_cdllongline = \&PDL::ta_cdllongline;
 
 
 
 
 
-=head2 TA_CDLMARUBOZU
+=head2 ta_cdlmarubozu
 
 =for sig
 
@@ -3625,7 +3625,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Marubozu
 
-  $outInteger = TA_CDLMARUBOZU($open, $high, $low, $close);
+  $outInteger = ta_cdlmarubozu($open, $high, $low, $close);
 
  # $open, $high, $low, $close - 1D piddles, all have to be the same size
  # returns: $outInteger - 1D piddle
@@ -3633,7 +3633,7 @@ Marubozu
 
 =for bad
 
-TA_CDLMARUBOZU processes bad values.
+ta_cdlmarubozu processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -3644,13 +3644,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_CDLMARUBOZU = \&PDL::TA_CDLMARUBOZU;
+*ta_cdlmarubozu = \&PDL::ta_cdlmarubozu;
 
 
 
 
 
-=head2 TA_CDLMATCHINGLOW
+=head2 ta_cdlmatchinglow
 
 =for sig
 
@@ -3658,7 +3658,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Matching Low
 
-  $outInteger = TA_CDLMATCHINGLOW($open, $high, $low, $close);
+  $outInteger = ta_cdlmatchinglow($open, $high, $low, $close);
 
  # $open, $high, $low, $close - 1D piddles, all have to be the same size
  # returns: $outInteger - 1D piddle
@@ -3666,7 +3666,7 @@ Matching Low
 
 =for bad
 
-TA_CDLMATCHINGLOW processes bad values.
+ta_cdlmatchinglow processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -3677,13 +3677,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_CDLMATCHINGLOW = \&PDL::TA_CDLMATCHINGLOW;
+*ta_cdlmatchinglow = \&PDL::ta_cdlmatchinglow;
 
 
 
 
 
-=head2 TA_CDLMATHOLD
+=head2 ta_cdlmathold
 
 =for sig
 
@@ -3691,7 +3691,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Mat Hold
 
-  $outInteger = TA_CDLMATHOLD($open, $high, $low, $close, $InPenetration);
+  $outInteger = ta_cdlmathold($open, $high, $low, $close, $InPenetration);
 
  # $open, $high, $low, $close - 1D piddles, all have to be the same size
  # $InPenetration [Percentage of penetration of a candle within another candle] - real number
@@ -3702,7 +3702,7 @@ Mat Hold
 
 =for bad
 
-TA_CDLMATHOLD processes bad values.
+ta_cdlmathold processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -3713,13 +3713,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_CDLMATHOLD = \&PDL::TA_CDLMATHOLD;
+*ta_cdlmathold = \&PDL::ta_cdlmathold;
 
 
 
 
 
-=head2 TA_CDLMORNINGDOJISTAR
+=head2 ta_cdlmorningdojistar
 
 =for sig
 
@@ -3727,7 +3727,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Morning Doji Star
 
-  $outInteger = TA_CDLMORNINGDOJISTAR($open, $high, $low, $close, $InPenetration);
+  $outInteger = ta_cdlmorningdojistar($open, $high, $low, $close, $InPenetration);
 
  # $open, $high, $low, $close - 1D piddles, all have to be the same size
  # $InPenetration [Percentage of penetration of a candle within another candle] - real number
@@ -3738,7 +3738,7 @@ Morning Doji Star
 
 =for bad
 
-TA_CDLMORNINGDOJISTAR processes bad values.
+ta_cdlmorningdojistar processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -3749,13 +3749,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_CDLMORNINGDOJISTAR = \&PDL::TA_CDLMORNINGDOJISTAR;
+*ta_cdlmorningdojistar = \&PDL::ta_cdlmorningdojistar;
 
 
 
 
 
-=head2 TA_CDLMORNINGSTAR
+=head2 ta_cdlmorningstar
 
 =for sig
 
@@ -3763,7 +3763,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Morning Star
 
-  $outInteger = TA_CDLMORNINGSTAR($open, $high, $low, $close, $InPenetration);
+  $outInteger = ta_cdlmorningstar($open, $high, $low, $close, $InPenetration);
 
  # $open, $high, $low, $close - 1D piddles, all have to be the same size
  # $InPenetration [Percentage of penetration of a candle within another candle] - real number
@@ -3774,7 +3774,7 @@ Morning Star
 
 =for bad
 
-TA_CDLMORNINGSTAR processes bad values.
+ta_cdlmorningstar processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -3785,13 +3785,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_CDLMORNINGSTAR = \&PDL::TA_CDLMORNINGSTAR;
+*ta_cdlmorningstar = \&PDL::ta_cdlmorningstar;
 
 
 
 
 
-=head2 TA_CDLONNECK
+=head2 ta_cdlonneck
 
 =for sig
 
@@ -3799,7 +3799,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 On-Neck Pattern
 
-  $outInteger = TA_CDLONNECK($open, $high, $low, $close);
+  $outInteger = ta_cdlonneck($open, $high, $low, $close);
 
  # $open, $high, $low, $close - 1D piddles, all have to be the same size
  # returns: $outInteger - 1D piddle
@@ -3807,7 +3807,7 @@ On-Neck Pattern
 
 =for bad
 
-TA_CDLONNECK processes bad values.
+ta_cdlonneck processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -3818,13 +3818,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_CDLONNECK = \&PDL::TA_CDLONNECK;
+*ta_cdlonneck = \&PDL::ta_cdlonneck;
 
 
 
 
 
-=head2 TA_CDLPIERCING
+=head2 ta_cdlpiercing
 
 =for sig
 
@@ -3832,7 +3832,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Piercing Pattern
 
-  $outInteger = TA_CDLPIERCING($open, $high, $low, $close);
+  $outInteger = ta_cdlpiercing($open, $high, $low, $close);
 
  # $open, $high, $low, $close - 1D piddles, all have to be the same size
  # returns: $outInteger - 1D piddle
@@ -3840,7 +3840,7 @@ Piercing Pattern
 
 =for bad
 
-TA_CDLPIERCING processes bad values.
+ta_cdlpiercing processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -3851,13 +3851,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_CDLPIERCING = \&PDL::TA_CDLPIERCING;
+*ta_cdlpiercing = \&PDL::ta_cdlpiercing;
 
 
 
 
 
-=head2 TA_CDLRICKSHAWMAN
+=head2 ta_cdlrickshawman
 
 =for sig
 
@@ -3865,7 +3865,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Rickshaw Man
 
-  $outInteger = TA_CDLRICKSHAWMAN($open, $high, $low, $close);
+  $outInteger = ta_cdlrickshawman($open, $high, $low, $close);
 
  # $open, $high, $low, $close - 1D piddles, all have to be the same size
  # returns: $outInteger - 1D piddle
@@ -3873,7 +3873,7 @@ Rickshaw Man
 
 =for bad
 
-TA_CDLRICKSHAWMAN processes bad values.
+ta_cdlrickshawman processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -3884,13 +3884,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_CDLRICKSHAWMAN = \&PDL::TA_CDLRICKSHAWMAN;
+*ta_cdlrickshawman = \&PDL::ta_cdlrickshawman;
 
 
 
 
 
-=head2 TA_CDLRISEFALL3METHODS
+=head2 ta_cdlrisefall3methods
 
 =for sig
 
@@ -3898,7 +3898,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Rising/Falling Three Methods
 
-  $outInteger = TA_CDLRISEFALL3METHODS($open, $high, $low, $close);
+  $outInteger = ta_cdlrisefall3methods($open, $high, $low, $close);
 
  # $open, $high, $low, $close - 1D piddles, all have to be the same size
  # returns: $outInteger - 1D piddle
@@ -3906,7 +3906,7 @@ Rising/Falling Three Methods
 
 =for bad
 
-TA_CDLRISEFALL3METHODS processes bad values.
+ta_cdlrisefall3methods processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -3917,13 +3917,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_CDLRISEFALL3METHODS = \&PDL::TA_CDLRISEFALL3METHODS;
+*ta_cdlrisefall3methods = \&PDL::ta_cdlrisefall3methods;
 
 
 
 
 
-=head2 TA_CDLSEPARATINGLINES
+=head2 ta_cdlseparatinglines
 
 =for sig
 
@@ -3931,7 +3931,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Separating Lines
 
-  $outInteger = TA_CDLSEPARATINGLINES($open, $high, $low, $close);
+  $outInteger = ta_cdlseparatinglines($open, $high, $low, $close);
 
  # $open, $high, $low, $close - 1D piddles, all have to be the same size
  # returns: $outInteger - 1D piddle
@@ -3939,7 +3939,7 @@ Separating Lines
 
 =for bad
 
-TA_CDLSEPARATINGLINES processes bad values.
+ta_cdlseparatinglines processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -3950,13 +3950,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_CDLSEPARATINGLINES = \&PDL::TA_CDLSEPARATINGLINES;
+*ta_cdlseparatinglines = \&PDL::ta_cdlseparatinglines;
 
 
 
 
 
-=head2 TA_CDLSHOOTINGSTAR
+=head2 ta_cdlshootingstar
 
 =for sig
 
@@ -3964,7 +3964,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Shooting Star
 
-  $outInteger = TA_CDLSHOOTINGSTAR($open, $high, $low, $close);
+  $outInteger = ta_cdlshootingstar($open, $high, $low, $close);
 
  # $open, $high, $low, $close - 1D piddles, all have to be the same size
  # returns: $outInteger - 1D piddle
@@ -3972,7 +3972,7 @@ Shooting Star
 
 =for bad
 
-TA_CDLSHOOTINGSTAR processes bad values.
+ta_cdlshootingstar processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -3983,13 +3983,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_CDLSHOOTINGSTAR = \&PDL::TA_CDLSHOOTINGSTAR;
+*ta_cdlshootingstar = \&PDL::ta_cdlshootingstar;
 
 
 
 
 
-=head2 TA_CDLSHORTLINE
+=head2 ta_cdlshortline
 
 =for sig
 
@@ -3997,7 +3997,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Short Line Candle
 
-  $outInteger = TA_CDLSHORTLINE($open, $high, $low, $close);
+  $outInteger = ta_cdlshortline($open, $high, $low, $close);
 
  # $open, $high, $low, $close - 1D piddles, all have to be the same size
  # returns: $outInteger - 1D piddle
@@ -4005,7 +4005,7 @@ Short Line Candle
 
 =for bad
 
-TA_CDLSHORTLINE processes bad values.
+ta_cdlshortline processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -4016,13 +4016,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_CDLSHORTLINE = \&PDL::TA_CDLSHORTLINE;
+*ta_cdlshortline = \&PDL::ta_cdlshortline;
 
 
 
 
 
-=head2 TA_CDLSPINNINGTOP
+=head2 ta_cdlspinningtop
 
 =for sig
 
@@ -4030,7 +4030,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Spinning Top
 
-  $outInteger = TA_CDLSPINNINGTOP($open, $high, $low, $close);
+  $outInteger = ta_cdlspinningtop($open, $high, $low, $close);
 
  # $open, $high, $low, $close - 1D piddles, all have to be the same size
  # returns: $outInteger - 1D piddle
@@ -4038,7 +4038,7 @@ Spinning Top
 
 =for bad
 
-TA_CDLSPINNINGTOP processes bad values.
+ta_cdlspinningtop processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -4049,13 +4049,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_CDLSPINNINGTOP = \&PDL::TA_CDLSPINNINGTOP;
+*ta_cdlspinningtop = \&PDL::ta_cdlspinningtop;
 
 
 
 
 
-=head2 TA_CDLSTALLEDPATTERN
+=head2 ta_cdlstalledpattern
 
 =for sig
 
@@ -4063,7 +4063,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Stalled Pattern
 
-  $outInteger = TA_CDLSTALLEDPATTERN($open, $high, $low, $close);
+  $outInteger = ta_cdlstalledpattern($open, $high, $low, $close);
 
  # $open, $high, $low, $close - 1D piddles, all have to be the same size
  # returns: $outInteger - 1D piddle
@@ -4071,7 +4071,7 @@ Stalled Pattern
 
 =for bad
 
-TA_CDLSTALLEDPATTERN processes bad values.
+ta_cdlstalledpattern processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -4082,13 +4082,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_CDLSTALLEDPATTERN = \&PDL::TA_CDLSTALLEDPATTERN;
+*ta_cdlstalledpattern = \&PDL::ta_cdlstalledpattern;
 
 
 
 
 
-=head2 TA_CDLSTICKSANDWICH
+=head2 ta_cdlsticksandwich
 
 =for sig
 
@@ -4096,7 +4096,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Stick Sandwich
 
-  $outInteger = TA_CDLSTICKSANDWICH($open, $high, $low, $close);
+  $outInteger = ta_cdlsticksandwich($open, $high, $low, $close);
 
  # $open, $high, $low, $close - 1D piddles, all have to be the same size
  # returns: $outInteger - 1D piddle
@@ -4104,7 +4104,7 @@ Stick Sandwich
 
 =for bad
 
-TA_CDLSTICKSANDWICH processes bad values.
+ta_cdlsticksandwich processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -4115,13 +4115,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_CDLSTICKSANDWICH = \&PDL::TA_CDLSTICKSANDWICH;
+*ta_cdlsticksandwich = \&PDL::ta_cdlsticksandwich;
 
 
 
 
 
-=head2 TA_CDLTAKURI
+=head2 ta_cdltakuri
 
 =for sig
 
@@ -4129,7 +4129,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Takuri (Dragonfly Doji with very long lower shadow)
 
-  $outInteger = TA_CDLTAKURI($open, $high, $low, $close);
+  $outInteger = ta_cdltakuri($open, $high, $low, $close);
 
  # $open, $high, $low, $close - 1D piddles, all have to be the same size
  # returns: $outInteger - 1D piddle
@@ -4137,7 +4137,7 @@ Takuri (Dragonfly Doji with very long lower shadow)
 
 =for bad
 
-TA_CDLTAKURI processes bad values.
+ta_cdltakuri processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -4148,13 +4148,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_CDLTAKURI = \&PDL::TA_CDLTAKURI;
+*ta_cdltakuri = \&PDL::ta_cdltakuri;
 
 
 
 
 
-=head2 TA_CDLTASUKIGAP
+=head2 ta_cdltasukigap
 
 =for sig
 
@@ -4162,7 +4162,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Tasuki Gap
 
-  $outInteger = TA_CDLTASUKIGAP($open, $high, $low, $close);
+  $outInteger = ta_cdltasukigap($open, $high, $low, $close);
 
  # $open, $high, $low, $close - 1D piddles, all have to be the same size
  # returns: $outInteger - 1D piddle
@@ -4170,7 +4170,7 @@ Tasuki Gap
 
 =for bad
 
-TA_CDLTASUKIGAP processes bad values.
+ta_cdltasukigap processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -4181,13 +4181,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_CDLTASUKIGAP = \&PDL::TA_CDLTASUKIGAP;
+*ta_cdltasukigap = \&PDL::ta_cdltasukigap;
 
 
 
 
 
-=head2 TA_CDLTHRUSTING
+=head2 ta_cdlthrusting
 
 =for sig
 
@@ -4195,7 +4195,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Thrusting Pattern
 
-  $outInteger = TA_CDLTHRUSTING($open, $high, $low, $close);
+  $outInteger = ta_cdlthrusting($open, $high, $low, $close);
 
  # $open, $high, $low, $close - 1D piddles, all have to be the same size
  # returns: $outInteger - 1D piddle
@@ -4203,7 +4203,7 @@ Thrusting Pattern
 
 =for bad
 
-TA_CDLTHRUSTING processes bad values.
+ta_cdlthrusting processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -4214,13 +4214,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_CDLTHRUSTING = \&PDL::TA_CDLTHRUSTING;
+*ta_cdlthrusting = \&PDL::ta_cdlthrusting;
 
 
 
 
 
-=head2 TA_CDLTRISTAR
+=head2 ta_cdltristar
 
 =for sig
 
@@ -4228,7 +4228,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Tristar Pattern
 
-  $outInteger = TA_CDLTRISTAR($open, $high, $low, $close);
+  $outInteger = ta_cdltristar($open, $high, $low, $close);
 
  # $open, $high, $low, $close - 1D piddles, all have to be the same size
  # returns: $outInteger - 1D piddle
@@ -4236,7 +4236,7 @@ Tristar Pattern
 
 =for bad
 
-TA_CDLTRISTAR processes bad values.
+ta_cdltristar processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -4247,13 +4247,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_CDLTRISTAR = \&PDL::TA_CDLTRISTAR;
+*ta_cdltristar = \&PDL::ta_cdltristar;
 
 
 
 
 
-=head2 TA_CDLUNIQUE3RIVER
+=head2 ta_cdlunique3river
 
 =for sig
 
@@ -4261,7 +4261,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Unique 3 River
 
-  $outInteger = TA_CDLUNIQUE3RIVER($open, $high, $low, $close);
+  $outInteger = ta_cdlunique3river($open, $high, $low, $close);
 
  # $open, $high, $low, $close - 1D piddles, all have to be the same size
  # returns: $outInteger - 1D piddle
@@ -4269,7 +4269,7 @@ Unique 3 River
 
 =for bad
 
-TA_CDLUNIQUE3RIVER processes bad values.
+ta_cdlunique3river processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -4280,13 +4280,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_CDLUNIQUE3RIVER = \&PDL::TA_CDLUNIQUE3RIVER;
+*ta_cdlunique3river = \&PDL::ta_cdlunique3river;
 
 
 
 
 
-=head2 TA_CDLUPSIDEGAP2CROWS
+=head2 ta_cdlupsidegap2crows
 
 =for sig
 
@@ -4294,7 +4294,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Upside Gap Two Crows
 
-  $outInteger = TA_CDLUPSIDEGAP2CROWS($open, $high, $low, $close);
+  $outInteger = ta_cdlupsidegap2crows($open, $high, $low, $close);
 
  # $open, $high, $low, $close - 1D piddles, all have to be the same size
  # returns: $outInteger - 1D piddle
@@ -4302,7 +4302,7 @@ Upside Gap Two Crows
 
 =for bad
 
-TA_CDLUPSIDEGAP2CROWS processes bad values.
+ta_cdlupsidegap2crows processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -4313,13 +4313,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_CDLUPSIDEGAP2CROWS = \&PDL::TA_CDLUPSIDEGAP2CROWS;
+*ta_cdlupsidegap2crows = \&PDL::ta_cdlupsidegap2crows;
 
 
 
 
 
-=head2 TA_CDLXSIDEGAP3METHODS
+=head2 ta_cdlxsidegap3methods
 
 =for sig
 
@@ -4327,7 +4327,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Upside/Downside Gap Three Methods
 
-  $outInteger = TA_CDLXSIDEGAP3METHODS($open, $high, $low, $close);
+  $outInteger = ta_cdlxsidegap3methods($open, $high, $low, $close);
 
  # $open, $high, $low, $close - 1D piddles, all have to be the same size
  # returns: $outInteger - 1D piddle
@@ -4335,7 +4335,7 @@ Upside/Downside Gap Three Methods
 
 =for bad
 
-TA_CDLXSIDEGAP3METHODS processes bad values.
+ta_cdlxsidegap3methods processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -4346,13 +4346,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_CDLXSIDEGAP3METHODS = \&PDL::TA_CDLXSIDEGAP3METHODS;
+*ta_cdlxsidegap3methods = \&PDL::ta_cdlxsidegap3methods;
 
 
 
 
 
-=head2 TA_BETA
+=head2 ta_beta
 
 =for sig
 
@@ -4360,7 +4360,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Beta
 
-  $outpdl = TA_BETA($inpdl0, $inpdl1, $InTimePeriod);
+  $outpdl = ta_beta($inpdl0, $inpdl1, $InTimePeriod);
 
  # $inpdl0 - 1D piddle
  # $inpdl1 - 1D piddle
@@ -4372,7 +4372,7 @@ Beta
 
 =for bad
 
-TA_BETA processes bad values.
+ta_beta processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -4383,13 +4383,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_BETA = \&PDL::TA_BETA;
+*ta_beta = \&PDL::ta_beta;
 
 
 
 
 
-=head2 TA_CORREL
+=head2 ta_correl
 
 =for sig
 
@@ -4397,7 +4397,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Pearson's Correlation Coefficient (r)
 
-  $outpdl = TA_CORREL($inpdl0, $inpdl1, $InTimePeriod);
+  $outpdl = ta_correl($inpdl0, $inpdl1, $InTimePeriod);
 
  # $inpdl0 - 1D piddle
  # $inpdl1 - 1D piddle
@@ -4409,7 +4409,7 @@ Pearson's Correlation Coefficient (r)
 
 =for bad
 
-TA_CORREL processes bad values.
+ta_correl processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -4420,13 +4420,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_CORREL = \&PDL::TA_CORREL;
+*ta_correl = \&PDL::ta_correl;
 
 
 
 
 
-=head2 TA_LINEARREG
+=head2 ta_linearreg
 
 =for sig
 
@@ -4434,7 +4434,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Linear Regression
 
-  $outpdl = TA_LINEARREG($inpdl, $InTimePeriod);
+  $outpdl = ta_linearreg($inpdl, $InTimePeriod);
 
  # $inpdl - 1D piddle with input data
  # $InTimePeriod [Number of period] - integer
@@ -4445,7 +4445,7 @@ Linear Regression
 
 =for bad
 
-TA_LINEARREG processes bad values.
+ta_linearreg processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -4456,13 +4456,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_LINEARREG = \&PDL::TA_LINEARREG;
+*ta_linearreg = \&PDL::ta_linearreg;
 
 
 
 
 
-=head2 TA_LINEARREG_ANGLE
+=head2 ta_linearreg_angle
 
 =for sig
 
@@ -4470,7 +4470,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Linear Regression Angle
 
-  $outpdl = TA_LINEARREG_ANGLE($inpdl, $InTimePeriod);
+  $outpdl = ta_linearreg_angle($inpdl, $InTimePeriod);
 
  # $inpdl - 1D piddle with input data
  # $InTimePeriod [Number of period] - integer
@@ -4481,7 +4481,7 @@ Linear Regression Angle
 
 =for bad
 
-TA_LINEARREG_ANGLE processes bad values.
+ta_linearreg_angle processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -4492,13 +4492,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_LINEARREG_ANGLE = \&PDL::TA_LINEARREG_ANGLE;
+*ta_linearreg_angle = \&PDL::ta_linearreg_angle;
 
 
 
 
 
-=head2 TA_LINEARREG_INTERCEPT
+=head2 ta_linearreg_intercept
 
 =for sig
 
@@ -4506,7 +4506,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Linear Regression Intercept
 
-  $outpdl = TA_LINEARREG_INTERCEPT($inpdl, $InTimePeriod);
+  $outpdl = ta_linearreg_intercept($inpdl, $InTimePeriod);
 
  # $inpdl - 1D piddle with input data
  # $InTimePeriod [Number of period] - integer
@@ -4517,7 +4517,7 @@ Linear Regression Intercept
 
 =for bad
 
-TA_LINEARREG_INTERCEPT processes bad values.
+ta_linearreg_intercept processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -4528,13 +4528,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_LINEARREG_INTERCEPT = \&PDL::TA_LINEARREG_INTERCEPT;
+*ta_linearreg_intercept = \&PDL::ta_linearreg_intercept;
 
 
 
 
 
-=head2 TA_LINEARREG_SLOPE
+=head2 ta_linearreg_slope
 
 =for sig
 
@@ -4542,7 +4542,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Linear Regression Slope
 
-  $outpdl = TA_LINEARREG_SLOPE($inpdl, $InTimePeriod);
+  $outpdl = ta_linearreg_slope($inpdl, $InTimePeriod);
 
  # $inpdl - 1D piddle with input data
  # $InTimePeriod [Number of period] - integer
@@ -4553,7 +4553,7 @@ Linear Regression Slope
 
 =for bad
 
-TA_LINEARREG_SLOPE processes bad values.
+ta_linearreg_slope processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -4564,13 +4564,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_LINEARREG_SLOPE = \&PDL::TA_LINEARREG_SLOPE;
+*ta_linearreg_slope = \&PDL::ta_linearreg_slope;
 
 
 
 
 
-=head2 TA_STDDEV
+=head2 ta_stddev
 
 =for sig
 
@@ -4578,7 +4578,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Standard Deviation
 
-  $outpdl = TA_STDDEV($inpdl, $InTimePeriod, $InNbDev);
+  $outpdl = ta_stddev($inpdl, $InTimePeriod, $InNbDev);
 
  # $inpdl - 1D piddle with input data
  # $InTimePeriod [Number of period] - integer
@@ -4592,7 +4592,7 @@ Standard Deviation
 
 =for bad
 
-TA_STDDEV processes bad values.
+ta_stddev processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -4603,13 +4603,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_STDDEV = \&PDL::TA_STDDEV;
+*ta_stddev = \&PDL::ta_stddev;
 
 
 
 
 
-=head2 TA_TSF
+=head2 ta_tsf
 
 =for sig
 
@@ -4617,7 +4617,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Time Series Forecast
 
-  $outpdl = TA_TSF($inpdl, $InTimePeriod);
+  $outpdl = ta_tsf($inpdl, $InTimePeriod);
 
  # $inpdl - 1D piddle with input data
  # $InTimePeriod [Number of period] - integer
@@ -4628,7 +4628,7 @@ Time Series Forecast
 
 =for bad
 
-TA_TSF processes bad values.
+ta_tsf processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -4639,13 +4639,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_TSF = \&PDL::TA_TSF;
+*ta_tsf = \&PDL::ta_tsf;
 
 
 
 
 
-=head2 TA_VAR
+=head2 ta_var
 
 =for sig
 
@@ -4653,7 +4653,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Variance
 
-  $outpdl = TA_VAR($inpdl, $InTimePeriod, $InNbDev);
+  $outpdl = ta_var($inpdl, $InTimePeriod, $InNbDev);
 
  # $inpdl - 1D piddle with input data
  # $InTimePeriod [Number of period] - integer
@@ -4667,7 +4667,7 @@ Variance
 
 =for bad
 
-TA_VAR processes bad values.
+ta_var processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -4678,13 +4678,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_VAR = \&PDL::TA_VAR;
+*ta_var = \&PDL::ta_var;
 
 
 
 
 
-=head2 TA_AVGPRICE
+=head2 ta_avgprice
 
 =for sig
 
@@ -4692,7 +4692,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Average Price
 
-  $outpdl = TA_AVGPRICE($open, $high, $low, $close);
+  $outpdl = ta_avgprice($open, $high, $low, $close);
 
  # $open, $high, $low, $close - 1D piddles, all have to be the same size
  # returns: $outpdl - 1D piddle
@@ -4700,7 +4700,7 @@ Average Price
 
 =for bad
 
-TA_AVGPRICE processes bad values.
+ta_avgprice processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -4711,13 +4711,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_AVGPRICE = \&PDL::TA_AVGPRICE;
+*ta_avgprice = \&PDL::ta_avgprice;
 
 
 
 
 
-=head2 TA_MEDPRICE
+=head2 ta_medprice
 
 =for sig
 
@@ -4725,7 +4725,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Median Price
 
-  $outpdl = TA_MEDPRICE($high, $low);
+  $outpdl = ta_medprice($high, $low);
 
  # $high, $low - 1D piddles, both have to be the same size
  # returns: $outpdl - 1D piddle
@@ -4733,7 +4733,7 @@ Median Price
 
 =for bad
 
-TA_MEDPRICE processes bad values.
+ta_medprice processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -4744,13 +4744,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_MEDPRICE = \&PDL::TA_MEDPRICE;
+*ta_medprice = \&PDL::ta_medprice;
 
 
 
 
 
-=head2 TA_TYPPRICE
+=head2 ta_typprice
 
 =for sig
 
@@ -4758,7 +4758,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Typical Price
 
-  $outpdl = TA_TYPPRICE($high, $low, $close);
+  $outpdl = ta_typprice($high, $low, $close);
 
  # $high, $low, $close - 1D piddles, all have to be the same size
  # returns: $outpdl - 1D piddle
@@ -4766,7 +4766,7 @@ Typical Price
 
 =for bad
 
-TA_TYPPRICE processes bad values.
+ta_typprice processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -4777,13 +4777,13 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_TYPPRICE = \&PDL::TA_TYPPRICE;
+*ta_typprice = \&PDL::ta_typprice;
 
 
 
 
 
-=head2 TA_WCLPRICE
+=head2 ta_wclprice
 
 =for sig
 
@@ -4791,7 +4791,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 Weighted Close Price
 
-  $outpdl = TA_WCLPRICE($high, $low, $close);
+  $outpdl = ta_wclprice($high, $low, $close);
 
  # $high, $low, $close - 1D piddles, all have to be the same size
  # returns: $outpdl - 1D piddle
@@ -4799,7 +4799,7 @@ Weighted Close Price
 
 =for bad
 
-TA_WCLPRICE processes bad values.
+ta_wclprice processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
@@ -4810,7 +4810,7 @@ It will set the bad-value flag of all output piddles if the flag is set for any 
 
 
 
-*TA_WCLPRICE = \&PDL::TA_WCLPRICE;
+*ta_wclprice = \&PDL::ta_wclprice;
 
 
 
