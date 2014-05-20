@@ -1,3 +1,26 @@
+
+#
+# GENERATED WITH PDL::PP! Don't modify!
+#
+package PDL::Finance::Talib;
+
+@EXPORT_OK  = qw( PDL::PP TA_BBANDS PDL::PP TA_DEMA PDL::PP TA_EMA PDL::PP TA_HT_TRENDLINE PDL::PP TA_KAMA PDL::PP TA_MA PDL::PP TA_MAMA PDL::PP TA_MAVP PDL::PP TA_MIDPOINT PDL::PP TA_MIDPRICE PDL::PP TA_SAR PDL::PP TA_SAREXT PDL::PP TA_SMA PDL::PP TA_T3 PDL::PP TA_TEMA PDL::PP TA_TRIMA PDL::PP TA_WMA PDL::PP TA_ATR PDL::PP TA_NATR PDL::PP TA_TRANGE PDL::PP TA_ADX PDL::PP TA_ADXR PDL::PP TA_APO PDL::PP TA_AROON PDL::PP TA_AROONOSC PDL::PP TA_BOP PDL::PP TA_CCI PDL::PP TA_CMO PDL::PP TA_DX PDL::PP TA_MACD PDL::PP TA_MACDEXT PDL::PP TA_MACDFIX PDL::PP TA_MFI PDL::PP TA_MINUS_DI PDL::PP TA_MINUS_DM PDL::PP TA_MOM PDL::PP TA_PLUS_DI PDL::PP TA_PLUS_DM PDL::PP TA_PPO PDL::PP TA_ROC PDL::PP TA_ROCP PDL::PP TA_ROCR PDL::PP TA_ROCR100 PDL::PP TA_RSI PDL::PP TA_STOCH PDL::PP TA_STOCHF PDL::PP TA_STOCHRSI PDL::PP TA_TRIX PDL::PP TA_ULTOSC PDL::PP TA_WILLR PDL::PP TA_HT_DCPERIOD PDL::PP TA_HT_DCPHASE PDL::PP TA_HT_PHASOR PDL::PP TA_HT_SINE PDL::PP TA_HT_TRENDMODE PDL::PP TA_AD PDL::PP TA_ADOSC PDL::PP TA_OBV PDL::PP TA_CDL2CROWS PDL::PP TA_CDL3BLACKCROWS PDL::PP TA_CDL3INSIDE PDL::PP TA_CDL3LINESTRIKE PDL::PP TA_CDL3OUTSIDE PDL::PP TA_CDL3STARSINSOUTH PDL::PP TA_CDL3WHITESOLDIERS PDL::PP TA_CDLABANDONEDBABY PDL::PP TA_CDLADVANCEBLOCK PDL::PP TA_CDLBELTHOLD PDL::PP TA_CDLBREAKAWAY PDL::PP TA_CDLCLOSINGMARUBOZU PDL::PP TA_CDLCONCEALBABYSWALL PDL::PP TA_CDLCOUNTERATTACK PDL::PP TA_CDLDARKCLOUDCOVER PDL::PP TA_CDLDOJI PDL::PP TA_CDLDOJISTAR PDL::PP TA_CDLDRAGONFLYDOJI PDL::PP TA_CDLENGULFING PDL::PP TA_CDLEVENINGDOJISTAR PDL::PP TA_CDLEVENINGSTAR PDL::PP TA_CDLGAPSIDESIDEWHITE PDL::PP TA_CDLGRAVESTONEDOJI PDL::PP TA_CDLHAMMER PDL::PP TA_CDLHANGINGMAN PDL::PP TA_CDLHARAMI PDL::PP TA_CDLHARAMICROSS PDL::PP TA_CDLHIGHWAVE PDL::PP TA_CDLHIKKAKE PDL::PP TA_CDLHIKKAKEMOD PDL::PP TA_CDLHOMINGPIGEON PDL::PP TA_CDLIDENTICAL3CROWS PDL::PP TA_CDLINNECK PDL::PP TA_CDLINVERTEDHAMMER PDL::PP TA_CDLKICKING PDL::PP TA_CDLKICKINGBYLENGTH PDL::PP TA_CDLLADDERBOTTOM PDL::PP TA_CDLLONGLEGGEDDOJI PDL::PP TA_CDLLONGLINE PDL::PP TA_CDLMARUBOZU PDL::PP TA_CDLMATCHINGLOW PDL::PP TA_CDLMATHOLD PDL::PP TA_CDLMORNINGDOJISTAR PDL::PP TA_CDLMORNINGSTAR PDL::PP TA_CDLONNECK PDL::PP TA_CDLPIERCING PDL::PP TA_CDLRICKSHAWMAN PDL::PP TA_CDLRISEFALL3METHODS PDL::PP TA_CDLSEPARATINGLINES PDL::PP TA_CDLSHOOTINGSTAR PDL::PP TA_CDLSHORTLINE PDL::PP TA_CDLSPINNINGTOP PDL::PP TA_CDLSTALLEDPATTERN PDL::PP TA_CDLSTICKSANDWICH PDL::PP TA_CDLTAKURI PDL::PP TA_CDLTASUKIGAP PDL::PP TA_CDLTHRUSTING PDL::PP TA_CDLTRISTAR PDL::PP TA_CDLUNIQUE3RIVER PDL::PP TA_CDLUPSIDEGAP2CROWS PDL::PP TA_CDLXSIDEGAP3METHODS PDL::PP TA_BETA PDL::PP TA_CORREL PDL::PP TA_LINEARREG PDL::PP TA_LINEARREG_ANGLE PDL::PP TA_LINEARREG_INTERCEPT PDL::PP TA_LINEARREG_SLOPE PDL::PP TA_STDDEV PDL::PP TA_TSF PDL::PP TA_VAR PDL::PP TA_AVGPRICE PDL::PP TA_MEDPRICE PDL::PP TA_TYPPRICE PDL::PP TA_WCLPRICE );
+%EXPORT_TAGS = (Func=>[@EXPORT_OK]);
+
+use PDL::Core;
+use PDL::Exporter;
+use DynaLoader;
+
+
+
+   $PDL::Finance::Talib::VERSION = 0.003;
+   @ISA    = ( 'PDL::Exporter','DynaLoader' );
+   push @PDL::Core::PP, __PACKAGE__;
+   bootstrap PDL::Finance::Talib $VERSION;
+
+
+
+
 =head1 NAME
 
 PDL::Finance::Talib - Technical Analysis Library (http://ta-lib.org) bindings for PDL
@@ -85,15 +108,23 @@ All available functions handles BAD values in input piddles (BAD values at the b
   my $MA2 = TA_MA($MA1, 3, 1);
   say $MA2;      # prints: [BAD BAD BAD BAD 2 3]
 
-
 =cut
+
+
+
+
+
 
 =head1 FUNCTIONS
 
 
 
-
 =cut
+
+
+
+
+
 
 =head2 TA_BBANDS
 
@@ -129,8 +160,18 @@ TA_BBANDS processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_BBANDS = \&PDL::TA_BBANDS;
+
+
+
+
 
 =head2 TA_DEMA
 
@@ -155,8 +196,18 @@ TA_DEMA processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_DEMA = \&PDL::TA_DEMA;
+
+
+
+
 
 =head2 TA_EMA
 
@@ -181,8 +232,18 @@ TA_EMA processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_EMA = \&PDL::TA_EMA;
+
+
+
+
 
 =head2 TA_HT_TRENDLINE
 
@@ -204,8 +265,18 @@ TA_HT_TRENDLINE processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_HT_TRENDLINE = \&PDL::TA_HT_TRENDLINE;
+
+
+
+
 
 =head2 TA_KAMA
 
@@ -230,8 +301,18 @@ TA_KAMA processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_KAMA = \&PDL::TA_KAMA;
+
+
+
+
 
 =head2 TA_MA
 
@@ -259,8 +340,18 @@ TA_MA processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_MA = \&PDL::TA_MA;
+
+
+
+
 
 =head2 TA_MAMA
 
@@ -289,8 +380,18 @@ TA_MAMA processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_MAMA = \&PDL::TA_MAMA;
+
+
+
+
 
 =head2 TA_MAVP
 
@@ -322,8 +423,18 @@ TA_MAVP processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_MAVP = \&PDL::TA_MAVP;
+
+
+
+
 
 =head2 TA_MIDPOINT
 
@@ -348,8 +459,18 @@ TA_MIDPOINT processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_MIDPOINT = \&PDL::TA_MIDPOINT;
+
+
+
+
 
 =head2 TA_MIDPRICE
 
@@ -374,8 +495,18 @@ TA_MIDPRICE processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_MIDPRICE = \&PDL::TA_MIDPRICE;
+
+
+
+
 
 =head2 TA_SAR
 
@@ -403,8 +534,18 @@ TA_SAR processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_SAR = \&PDL::TA_SAR;
+
+
+
+
 
 =head2 TA_SAREXT
 
@@ -450,8 +591,18 @@ TA_SAREXT processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_SAREXT = \&PDL::TA_SAREXT;
+
+
+
+
 
 =head2 TA_SMA
 
@@ -476,8 +627,18 @@ TA_SMA processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_SMA = \&PDL::TA_SMA;
+
+
+
+
 
 =head2 TA_T3
 
@@ -505,8 +666,18 @@ TA_T3 processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_T3 = \&PDL::TA_T3;
+
+
+
+
 
 =head2 TA_TEMA
 
@@ -531,8 +702,18 @@ TA_TEMA processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_TEMA = \&PDL::TA_TEMA;
+
+
+
+
 
 =head2 TA_TRIMA
 
@@ -557,8 +738,18 @@ TA_TRIMA processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_TRIMA = \&PDL::TA_TRIMA;
+
+
+
+
 
 =head2 TA_WMA
 
@@ -583,8 +774,18 @@ TA_WMA processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_WMA = \&PDL::TA_WMA;
+
+
+
+
 
 =head2 TA_ATR
 
@@ -609,8 +810,18 @@ TA_ATR processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_ATR = \&PDL::TA_ATR;
+
+
+
+
 
 =head2 TA_NATR
 
@@ -635,8 +846,18 @@ TA_NATR processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_NATR = \&PDL::TA_NATR;
+
+
+
+
 
 =head2 TA_TRANGE
 
@@ -658,8 +879,18 @@ TA_TRANGE processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_TRANGE = \&PDL::TA_TRANGE;
+
+
+
+
 
 =head2 TA_ADX
 
@@ -684,8 +915,18 @@ TA_ADX processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_ADX = \&PDL::TA_ADX;
+
+
+
+
 
 =head2 TA_ADXR
 
@@ -710,8 +951,18 @@ TA_ADXR processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_ADXR = \&PDL::TA_ADXR;
+
+
+
+
 
 =head2 TA_APO
 
@@ -742,8 +993,18 @@ TA_APO processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_APO = \&PDL::TA_APO;
+
+
+
+
 
 =head2 TA_AROON
 
@@ -769,8 +1030,18 @@ TA_AROON processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_AROON = \&PDL::TA_AROON;
+
+
+
+
 
 =head2 TA_AROONOSC
 
@@ -795,8 +1066,18 @@ TA_AROONOSC processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_AROONOSC = \&PDL::TA_AROONOSC;
+
+
+
+
 
 =head2 TA_BOP
 
@@ -818,8 +1099,18 @@ TA_BOP processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_BOP = \&PDL::TA_BOP;
+
+
+
+
 
 =head2 TA_CCI
 
@@ -844,8 +1135,18 @@ TA_CCI processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_CCI = \&PDL::TA_CCI;
+
+
+
+
 
 =head2 TA_CMO
 
@@ -870,8 +1171,18 @@ TA_CMO processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_CMO = \&PDL::TA_CMO;
+
+
+
+
 
 =head2 TA_DX
 
@@ -896,8 +1207,18 @@ TA_DX processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_DX = \&PDL::TA_DX;
+
+
+
+
 
 =head2 TA_MACD
 
@@ -930,8 +1251,18 @@ TA_MACD processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_MACD = \&PDL::TA_MACD;
+
+
+
+
 
 =head2 TA_MACDEXT
 
@@ -973,8 +1304,18 @@ TA_MACDEXT processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_MACDEXT = \&PDL::TA_MACDEXT;
+
+
+
+
 
 =head2 TA_MACDFIX
 
@@ -1001,8 +1342,18 @@ TA_MACDFIX processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_MACDFIX = \&PDL::TA_MACDFIX;
+
+
+
+
 
 =head2 TA_MFI
 
@@ -1027,8 +1378,18 @@ TA_MFI processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_MFI = \&PDL::TA_MFI;
+
+
+
+
 
 =head2 TA_MINUS_DI
 
@@ -1053,8 +1414,18 @@ TA_MINUS_DI processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_MINUS_DI = \&PDL::TA_MINUS_DI;
+
+
+
+
 
 =head2 TA_MINUS_DM
 
@@ -1079,8 +1450,18 @@ TA_MINUS_DM processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_MINUS_DM = \&PDL::TA_MINUS_DM;
+
+
+
+
 
 =head2 TA_MOM
 
@@ -1105,8 +1486,18 @@ TA_MOM processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_MOM = \&PDL::TA_MOM;
+
+
+
+
 
 =head2 TA_PLUS_DI
 
@@ -1131,8 +1522,18 @@ TA_PLUS_DI processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_PLUS_DI = \&PDL::TA_PLUS_DI;
+
+
+
+
 
 =head2 TA_PLUS_DM
 
@@ -1157,8 +1558,18 @@ TA_PLUS_DM processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_PLUS_DM = \&PDL::TA_PLUS_DM;
+
+
+
+
 
 =head2 TA_PPO
 
@@ -1189,8 +1600,18 @@ TA_PPO processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_PPO = \&PDL::TA_PPO;
+
+
+
+
 
 =head2 TA_ROC
 
@@ -1215,8 +1636,18 @@ TA_ROC processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_ROC = \&PDL::TA_ROC;
+
+
+
+
 
 =head2 TA_ROCP
 
@@ -1241,8 +1672,18 @@ TA_ROCP processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_ROCP = \&PDL::TA_ROCP;
+
+
+
+
 
 =head2 TA_ROCR
 
@@ -1267,8 +1708,18 @@ TA_ROCR processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_ROCR = \&PDL::TA_ROCR;
+
+
+
+
 
 =head2 TA_ROCR100
 
@@ -1293,8 +1744,18 @@ TA_ROCR100 processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_ROCR100 = \&PDL::TA_ROCR100;
+
+
+
+
 
 =head2 TA_RSI
 
@@ -1319,8 +1780,18 @@ TA_RSI processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_RSI = \&PDL::TA_RSI;
+
+
+
+
 
 =head2 TA_STOCH
 
@@ -1358,8 +1829,18 @@ TA_STOCH processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_STOCH = \&PDL::TA_STOCH;
+
+
+
+
 
 =head2 TA_STOCHF
 
@@ -1391,8 +1872,18 @@ TA_STOCHF processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_STOCHF = \&PDL::TA_STOCHF;
+
+
+
+
 
 =head2 TA_STOCHRSI
 
@@ -1427,8 +1918,18 @@ TA_STOCHRSI processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_STOCHRSI = \&PDL::TA_STOCHRSI;
+
+
+
+
 
 =head2 TA_TRIX
 
@@ -1453,8 +1954,18 @@ TA_TRIX processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_TRIX = \&PDL::TA_TRIX;
+
+
+
+
 
 =head2 TA_ULTOSC
 
@@ -1485,8 +1996,18 @@ TA_ULTOSC processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_ULTOSC = \&PDL::TA_ULTOSC;
+
+
+
+
 
 =head2 TA_WILLR
 
@@ -1511,8 +2032,18 @@ TA_WILLR processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_WILLR = \&PDL::TA_WILLR;
+
+
+
+
 
 =head2 TA_HT_DCPERIOD
 
@@ -1534,8 +2065,18 @@ TA_HT_DCPERIOD processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_HT_DCPERIOD = \&PDL::TA_HT_DCPERIOD;
+
+
+
+
 
 =head2 TA_HT_DCPHASE
 
@@ -1557,8 +2098,18 @@ TA_HT_DCPHASE processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_HT_DCPHASE = \&PDL::TA_HT_DCPHASE;
+
+
+
+
 
 =head2 TA_HT_PHASOR
 
@@ -1581,8 +2132,18 @@ TA_HT_PHASOR processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_HT_PHASOR = \&PDL::TA_HT_PHASOR;
+
+
+
+
 
 =head2 TA_HT_SINE
 
@@ -1605,8 +2166,18 @@ TA_HT_SINE processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_HT_SINE = \&PDL::TA_HT_SINE;
+
+
+
+
 
 =head2 TA_HT_TRENDMODE
 
@@ -1628,8 +2199,18 @@ TA_HT_TRENDMODE processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_HT_TRENDMODE = \&PDL::TA_HT_TRENDMODE;
+
+
+
+
 
 =head2 TA_AD
 
@@ -1651,8 +2232,18 @@ TA_AD processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_AD = \&PDL::TA_AD;
+
+
+
+
 
 =head2 TA_ADOSC
 
@@ -1680,8 +2271,18 @@ TA_ADOSC processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_ADOSC = \&PDL::TA_ADOSC;
+
+
+
+
 
 =head2 TA_OBV
 
@@ -1704,8 +2305,18 @@ TA_OBV processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_OBV = \&PDL::TA_OBV;
+
+
+
+
 
 =head2 TA_CDL2CROWS
 
@@ -1727,8 +2338,18 @@ TA_CDL2CROWS processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_CDL2CROWS = \&PDL::TA_CDL2CROWS;
+
+
+
+
 
 =head2 TA_CDL3BLACKCROWS
 
@@ -1750,8 +2371,18 @@ TA_CDL3BLACKCROWS processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_CDL3BLACKCROWS = \&PDL::TA_CDL3BLACKCROWS;
+
+
+
+
 
 =head2 TA_CDL3INSIDE
 
@@ -1773,8 +2404,18 @@ TA_CDL3INSIDE processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_CDL3INSIDE = \&PDL::TA_CDL3INSIDE;
+
+
+
+
 
 =head2 TA_CDL3LINESTRIKE
 
@@ -1796,8 +2437,18 @@ TA_CDL3LINESTRIKE processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_CDL3LINESTRIKE = \&PDL::TA_CDL3LINESTRIKE;
+
+
+
+
 
 =head2 TA_CDL3OUTSIDE
 
@@ -1819,8 +2470,18 @@ TA_CDL3OUTSIDE processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_CDL3OUTSIDE = \&PDL::TA_CDL3OUTSIDE;
+
+
+
+
 
 =head2 TA_CDL3STARSINSOUTH
 
@@ -1842,8 +2503,18 @@ TA_CDL3STARSINSOUTH processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_CDL3STARSINSOUTH = \&PDL::TA_CDL3STARSINSOUTH;
+
+
+
+
 
 =head2 TA_CDL3WHITESOLDIERS
 
@@ -1865,8 +2536,18 @@ TA_CDL3WHITESOLDIERS processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_CDL3WHITESOLDIERS = \&PDL::TA_CDL3WHITESOLDIERS;
+
+
+
+
 
 =head2 TA_CDLABANDONEDBABY
 
@@ -1891,8 +2572,18 @@ TA_CDLABANDONEDBABY processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_CDLABANDONEDBABY = \&PDL::TA_CDLABANDONEDBABY;
+
+
+
+
 
 =head2 TA_CDLADVANCEBLOCK
 
@@ -1914,8 +2605,18 @@ TA_CDLADVANCEBLOCK processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_CDLADVANCEBLOCK = \&PDL::TA_CDLADVANCEBLOCK;
+
+
+
+
 
 =head2 TA_CDLBELTHOLD
 
@@ -1937,8 +2638,18 @@ TA_CDLBELTHOLD processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_CDLBELTHOLD = \&PDL::TA_CDLBELTHOLD;
+
+
+
+
 
 =head2 TA_CDLBREAKAWAY
 
@@ -1960,8 +2671,18 @@ TA_CDLBREAKAWAY processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_CDLBREAKAWAY = \&PDL::TA_CDLBREAKAWAY;
+
+
+
+
 
 =head2 TA_CDLCLOSINGMARUBOZU
 
@@ -1983,8 +2704,18 @@ TA_CDLCLOSINGMARUBOZU processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_CDLCLOSINGMARUBOZU = \&PDL::TA_CDLCLOSINGMARUBOZU;
+
+
+
+
 
 =head2 TA_CDLCONCEALBABYSWALL
 
@@ -2006,8 +2737,18 @@ TA_CDLCONCEALBABYSWALL processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_CDLCONCEALBABYSWALL = \&PDL::TA_CDLCONCEALBABYSWALL;
+
+
+
+
 
 =head2 TA_CDLCOUNTERATTACK
 
@@ -2029,8 +2770,18 @@ TA_CDLCOUNTERATTACK processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_CDLCOUNTERATTACK = \&PDL::TA_CDLCOUNTERATTACK;
+
+
+
+
 
 =head2 TA_CDLDARKCLOUDCOVER
 
@@ -2055,8 +2806,18 @@ TA_CDLDARKCLOUDCOVER processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_CDLDARKCLOUDCOVER = \&PDL::TA_CDLDARKCLOUDCOVER;
+
+
+
+
 
 =head2 TA_CDLDOJI
 
@@ -2078,8 +2839,18 @@ TA_CDLDOJI processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_CDLDOJI = \&PDL::TA_CDLDOJI;
+
+
+
+
 
 =head2 TA_CDLDOJISTAR
 
@@ -2101,8 +2872,18 @@ TA_CDLDOJISTAR processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_CDLDOJISTAR = \&PDL::TA_CDLDOJISTAR;
+
+
+
+
 
 =head2 TA_CDLDRAGONFLYDOJI
 
@@ -2124,8 +2905,18 @@ TA_CDLDRAGONFLYDOJI processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_CDLDRAGONFLYDOJI = \&PDL::TA_CDLDRAGONFLYDOJI;
+
+
+
+
 
 =head2 TA_CDLENGULFING
 
@@ -2147,8 +2938,18 @@ TA_CDLENGULFING processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_CDLENGULFING = \&PDL::TA_CDLENGULFING;
+
+
+
+
 
 =head2 TA_CDLEVENINGDOJISTAR
 
@@ -2173,8 +2974,18 @@ TA_CDLEVENINGDOJISTAR processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_CDLEVENINGDOJISTAR = \&PDL::TA_CDLEVENINGDOJISTAR;
+
+
+
+
 
 =head2 TA_CDLEVENINGSTAR
 
@@ -2199,8 +3010,18 @@ TA_CDLEVENINGSTAR processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_CDLEVENINGSTAR = \&PDL::TA_CDLEVENINGSTAR;
+
+
+
+
 
 =head2 TA_CDLGAPSIDESIDEWHITE
 
@@ -2222,8 +3043,18 @@ TA_CDLGAPSIDESIDEWHITE processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_CDLGAPSIDESIDEWHITE = \&PDL::TA_CDLGAPSIDESIDEWHITE;
+
+
+
+
 
 =head2 TA_CDLGRAVESTONEDOJI
 
@@ -2245,8 +3076,18 @@ TA_CDLGRAVESTONEDOJI processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_CDLGRAVESTONEDOJI = \&PDL::TA_CDLGRAVESTONEDOJI;
+
+
+
+
 
 =head2 TA_CDLHAMMER
 
@@ -2268,8 +3109,18 @@ TA_CDLHAMMER processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_CDLHAMMER = \&PDL::TA_CDLHAMMER;
+
+
+
+
 
 =head2 TA_CDLHANGINGMAN
 
@@ -2291,8 +3142,18 @@ TA_CDLHANGINGMAN processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_CDLHANGINGMAN = \&PDL::TA_CDLHANGINGMAN;
+
+
+
+
 
 =head2 TA_CDLHARAMI
 
@@ -2314,8 +3175,18 @@ TA_CDLHARAMI processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_CDLHARAMI = \&PDL::TA_CDLHARAMI;
+
+
+
+
 
 =head2 TA_CDLHARAMICROSS
 
@@ -2337,8 +3208,18 @@ TA_CDLHARAMICROSS processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_CDLHARAMICROSS = \&PDL::TA_CDLHARAMICROSS;
+
+
+
+
 
 =head2 TA_CDLHIGHWAVE
 
@@ -2360,8 +3241,18 @@ TA_CDLHIGHWAVE processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_CDLHIGHWAVE = \&PDL::TA_CDLHIGHWAVE;
+
+
+
+
 
 =head2 TA_CDLHIKKAKE
 
@@ -2383,8 +3274,18 @@ TA_CDLHIKKAKE processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_CDLHIKKAKE = \&PDL::TA_CDLHIKKAKE;
+
+
+
+
 
 =head2 TA_CDLHIKKAKEMOD
 
@@ -2406,8 +3307,18 @@ TA_CDLHIKKAKEMOD processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_CDLHIKKAKEMOD = \&PDL::TA_CDLHIKKAKEMOD;
+
+
+
+
 
 =head2 TA_CDLHOMINGPIGEON
 
@@ -2429,8 +3340,18 @@ TA_CDLHOMINGPIGEON processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_CDLHOMINGPIGEON = \&PDL::TA_CDLHOMINGPIGEON;
+
+
+
+
 
 =head2 TA_CDLIDENTICAL3CROWS
 
@@ -2452,8 +3373,18 @@ TA_CDLIDENTICAL3CROWS processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_CDLIDENTICAL3CROWS = \&PDL::TA_CDLIDENTICAL3CROWS;
+
+
+
+
 
 =head2 TA_CDLINNECK
 
@@ -2475,8 +3406,18 @@ TA_CDLINNECK processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_CDLINNECK = \&PDL::TA_CDLINNECK;
+
+
+
+
 
 =head2 TA_CDLINVERTEDHAMMER
 
@@ -2498,8 +3439,18 @@ TA_CDLINVERTEDHAMMER processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_CDLINVERTEDHAMMER = \&PDL::TA_CDLINVERTEDHAMMER;
+
+
+
+
 
 =head2 TA_CDLKICKING
 
@@ -2521,8 +3472,18 @@ TA_CDLKICKING processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_CDLKICKING = \&PDL::TA_CDLKICKING;
+
+
+
+
 
 =head2 TA_CDLKICKINGBYLENGTH
 
@@ -2544,8 +3505,18 @@ TA_CDLKICKINGBYLENGTH processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_CDLKICKINGBYLENGTH = \&PDL::TA_CDLKICKINGBYLENGTH;
+
+
+
+
 
 =head2 TA_CDLLADDERBOTTOM
 
@@ -2567,8 +3538,18 @@ TA_CDLLADDERBOTTOM processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_CDLLADDERBOTTOM = \&PDL::TA_CDLLADDERBOTTOM;
+
+
+
+
 
 =head2 TA_CDLLONGLEGGEDDOJI
 
@@ -2590,8 +3571,18 @@ TA_CDLLONGLEGGEDDOJI processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_CDLLONGLEGGEDDOJI = \&PDL::TA_CDLLONGLEGGEDDOJI;
+
+
+
+
 
 =head2 TA_CDLLONGLINE
 
@@ -2613,8 +3604,18 @@ TA_CDLLONGLINE processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_CDLLONGLINE = \&PDL::TA_CDLLONGLINE;
+
+
+
+
 
 =head2 TA_CDLMARUBOZU
 
@@ -2636,8 +3637,18 @@ TA_CDLMARUBOZU processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_CDLMARUBOZU = \&PDL::TA_CDLMARUBOZU;
+
+
+
+
 
 =head2 TA_CDLMATCHINGLOW
 
@@ -2659,8 +3670,18 @@ TA_CDLMATCHINGLOW processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_CDLMATCHINGLOW = \&PDL::TA_CDLMATCHINGLOW;
+
+
+
+
 
 =head2 TA_CDLMATHOLD
 
@@ -2685,8 +3706,18 @@ TA_CDLMATHOLD processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_CDLMATHOLD = \&PDL::TA_CDLMATHOLD;
+
+
+
+
 
 =head2 TA_CDLMORNINGDOJISTAR
 
@@ -2711,8 +3742,18 @@ TA_CDLMORNINGDOJISTAR processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_CDLMORNINGDOJISTAR = \&PDL::TA_CDLMORNINGDOJISTAR;
+
+
+
+
 
 =head2 TA_CDLMORNINGSTAR
 
@@ -2737,8 +3778,18 @@ TA_CDLMORNINGSTAR processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_CDLMORNINGSTAR = \&PDL::TA_CDLMORNINGSTAR;
+
+
+
+
 
 =head2 TA_CDLONNECK
 
@@ -2760,8 +3811,18 @@ TA_CDLONNECK processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_CDLONNECK = \&PDL::TA_CDLONNECK;
+
+
+
+
 
 =head2 TA_CDLPIERCING
 
@@ -2783,8 +3844,18 @@ TA_CDLPIERCING processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_CDLPIERCING = \&PDL::TA_CDLPIERCING;
+
+
+
+
 
 =head2 TA_CDLRICKSHAWMAN
 
@@ -2806,8 +3877,18 @@ TA_CDLRICKSHAWMAN processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_CDLRICKSHAWMAN = \&PDL::TA_CDLRICKSHAWMAN;
+
+
+
+
 
 =head2 TA_CDLRISEFALL3METHODS
 
@@ -2829,8 +3910,18 @@ TA_CDLRISEFALL3METHODS processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_CDLRISEFALL3METHODS = \&PDL::TA_CDLRISEFALL3METHODS;
+
+
+
+
 
 =head2 TA_CDLSEPARATINGLINES
 
@@ -2852,8 +3943,18 @@ TA_CDLSEPARATINGLINES processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_CDLSEPARATINGLINES = \&PDL::TA_CDLSEPARATINGLINES;
+
+
+
+
 
 =head2 TA_CDLSHOOTINGSTAR
 
@@ -2875,8 +3976,18 @@ TA_CDLSHOOTINGSTAR processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_CDLSHOOTINGSTAR = \&PDL::TA_CDLSHOOTINGSTAR;
+
+
+
+
 
 =head2 TA_CDLSHORTLINE
 
@@ -2898,8 +4009,18 @@ TA_CDLSHORTLINE processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_CDLSHORTLINE = \&PDL::TA_CDLSHORTLINE;
+
+
+
+
 
 =head2 TA_CDLSPINNINGTOP
 
@@ -2921,8 +4042,18 @@ TA_CDLSPINNINGTOP processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_CDLSPINNINGTOP = \&PDL::TA_CDLSPINNINGTOP;
+
+
+
+
 
 =head2 TA_CDLSTALLEDPATTERN
 
@@ -2944,8 +4075,18 @@ TA_CDLSTALLEDPATTERN processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_CDLSTALLEDPATTERN = \&PDL::TA_CDLSTALLEDPATTERN;
+
+
+
+
 
 =head2 TA_CDLSTICKSANDWICH
 
@@ -2967,8 +4108,18 @@ TA_CDLSTICKSANDWICH processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_CDLSTICKSANDWICH = \&PDL::TA_CDLSTICKSANDWICH;
+
+
+
+
 
 =head2 TA_CDLTAKURI
 
@@ -2990,8 +4141,18 @@ TA_CDLTAKURI processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_CDLTAKURI = \&PDL::TA_CDLTAKURI;
+
+
+
+
 
 =head2 TA_CDLTASUKIGAP
 
@@ -3013,8 +4174,18 @@ TA_CDLTASUKIGAP processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_CDLTASUKIGAP = \&PDL::TA_CDLTASUKIGAP;
+
+
+
+
 
 =head2 TA_CDLTHRUSTING
 
@@ -3036,8 +4207,18 @@ TA_CDLTHRUSTING processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_CDLTHRUSTING = \&PDL::TA_CDLTHRUSTING;
+
+
+
+
 
 =head2 TA_CDLTRISTAR
 
@@ -3059,8 +4240,18 @@ TA_CDLTRISTAR processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_CDLTRISTAR = \&PDL::TA_CDLTRISTAR;
+
+
+
+
 
 =head2 TA_CDLUNIQUE3RIVER
 
@@ -3082,8 +4273,18 @@ TA_CDLUNIQUE3RIVER processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_CDLUNIQUE3RIVER = \&PDL::TA_CDLUNIQUE3RIVER;
+
+
+
+
 
 =head2 TA_CDLUPSIDEGAP2CROWS
 
@@ -3105,8 +4306,18 @@ TA_CDLUPSIDEGAP2CROWS processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_CDLUPSIDEGAP2CROWS = \&PDL::TA_CDLUPSIDEGAP2CROWS;
+
+
+
+
 
 =head2 TA_CDLXSIDEGAP3METHODS
 
@@ -3128,8 +4339,18 @@ TA_CDLXSIDEGAP3METHODS processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_CDLXSIDEGAP3METHODS = \&PDL::TA_CDLXSIDEGAP3METHODS;
+
+
+
+
 
 =head2 TA_BETA
 
@@ -3155,8 +4376,18 @@ TA_BETA processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_BETA = \&PDL::TA_BETA;
+
+
+
+
 
 =head2 TA_CORREL
 
@@ -3182,8 +4413,18 @@ TA_CORREL processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_CORREL = \&PDL::TA_CORREL;
+
+
+
+
 
 =head2 TA_LINEARREG
 
@@ -3208,8 +4449,18 @@ TA_LINEARREG processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_LINEARREG = \&PDL::TA_LINEARREG;
+
+
+
+
 
 =head2 TA_LINEARREG_ANGLE
 
@@ -3234,8 +4485,18 @@ TA_LINEARREG_ANGLE processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_LINEARREG_ANGLE = \&PDL::TA_LINEARREG_ANGLE;
+
+
+
+
 
 =head2 TA_LINEARREG_INTERCEPT
 
@@ -3260,8 +4521,18 @@ TA_LINEARREG_INTERCEPT processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_LINEARREG_INTERCEPT = \&PDL::TA_LINEARREG_INTERCEPT;
+
+
+
+
 
 =head2 TA_LINEARREG_SLOPE
 
@@ -3286,8 +4557,18 @@ TA_LINEARREG_SLOPE processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_LINEARREG_SLOPE = \&PDL::TA_LINEARREG_SLOPE;
+
+
+
+
 
 =head2 TA_STDDEV
 
@@ -3315,8 +4596,18 @@ TA_STDDEV processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_STDDEV = \&PDL::TA_STDDEV;
+
+
+
+
 
 =head2 TA_TSF
 
@@ -3341,8 +4632,18 @@ TA_TSF processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_TSF = \&PDL::TA_TSF;
+
+
+
+
 
 =head2 TA_VAR
 
@@ -3370,8 +4671,18 @@ TA_VAR processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_VAR = \&PDL::TA_VAR;
+
+
+
+
 
 =head2 TA_AVGPRICE
 
@@ -3393,8 +4704,18 @@ TA_AVGPRICE processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_AVGPRICE = \&PDL::TA_AVGPRICE;
+
+
+
+
 
 =head2 TA_MEDPRICE
 
@@ -3416,8 +4737,18 @@ TA_MEDPRICE processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_MEDPRICE = \&PDL::TA_MEDPRICE;
+
+
+
+
 
 =head2 TA_TYPPRICE
 
@@ -3439,8 +4770,18 @@ TA_TYPPRICE processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_TYPPRICE = \&PDL::TA_TYPPRICE;
+
+
+
+
 
 =head2 TA_WCLPRICE
 
@@ -3462,13 +4803,30 @@ TA_WCLPRICE processes bad values.
 It will set the bad-value flag of all output piddles if the flag is set for any of the input piddles.
 
 
-
 =cut
+
+
+
+
+
+
+*TA_WCLPRICE = \&PDL::TA_WCLPRICE;
+
+
+
+;
 
 =head1 LICENSE
 
 This program is free software; you can redistribute it and/or modify it under the same terms as Perl itself.
 
-
 =cut
 
+
+
+
+# Exit with OK status
+
+1;
+
+		   
