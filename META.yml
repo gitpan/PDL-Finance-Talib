@@ -21,4 +21,6 @@ no_index:
     - inc
 requires:
   PDL: 2.006
-version: 0.004
+resources:
+  repository: https://github.com/kmx/pdl-finance-talib
+version: 0.005

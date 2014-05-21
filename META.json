@@ -39,5 +39,10 @@
       }
    },
    "release_status" : "stable",
-   "version" : "0.004"
+   "resources" : {
+      "repository" : {
+         "url" : "https://github.com/kmx/pdl-finance-talib"
+      }
+   },
+   "version" : "0.005"
 }

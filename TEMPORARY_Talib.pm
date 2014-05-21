@@ -13,7 +13,7 @@ use DynaLoader;
 
 
 
-   $PDL::Finance::Talib::VERSION = 0.004;
+   $PDL::Finance::Talib::VERSION = 0.005;
    @ISA    = ( 'PDL::Exporter','DynaLoader' );
    push @PDL::Core::PP, __PACKAGE__;
    bootstrap PDL::Finance::Talib $VERSION;
