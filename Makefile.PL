@@ -2,27 +2,40 @@ use strict;
 use warnings;
 use ExtUtils::MakeMaker;
 use PDL::Core::Dev;
- 
-# ta-lib detection taken from Finance::TA
 
 my $libs = $ENV{TALIB_LIBS};
-if (!defined $libs) {
-  $libs = `ta-lib-config --libs`;
-  $libs =~ s/[\s\n\r]*$//;
-  #XXX-HACK fixing broken ta-lib-config output
-  $libs .= " -lta_lib" if $libs && $libs !~ /-lta_lib/;
-}
-
 my $cflags = $ENV{TALIB_CFLAGS};
-if (!defined $cflags) {
- $cflags = `ta-lib-config --cflags`;
- $cflags =~ s/[\s\n\r]*$//;
+
+eval { require Alien::TALib };
+if ( !$@ ) {
+  warn "Using ta-lib via Alien::TALib\n";
+  my $alien = Alien::TALib->new;
+  $libs   = $alien->libs   if !defined $libs;
+  $cflags = $alien->cflags if !defined $cflags;
+}
+else {
+  warn "Alien::TALib not found, trying ta-lib-config\n";
+  if (!defined $libs) {
+    $libs = `ta-lib-config --libs`;
+    $libs =~ s/[\s\n\r]*$//;
+    #XXX-HACK fixing broken ta-lib-config output
+    $libs .= " -lta_lib" if $libs && $libs !~ /-lta_lib/;
+  }
+
+  if (!defined $cflags) {
+   $cflags = `ta-lib-config --cflags`;
+   $cflags =~ s/[\s\n\r]*$//;
+  }
 }
 
 unless ($libs) {
   warn "\nERROR: ta-lib not found on your system!\n\n";
   exit 0;
 }
+
+warn "Gonna use\n",
+     " cflags: '$cflags'\n",
+     " libs:   '$libs'\n";
 
 my $package = [qw/Talib.pd Talib PDL::Finance::Talib/];
 my %eumm_args = pdlpp_stdargs($package);
@@ -37,21 +50,25 @@ WriteMakefile(
   LICENSE       => 'perl',
   PREREQ_PM     => {
         'PDL' => 2.006,
+        'Alien::TALib' => 0.06,
   },
   BUILD_REQUIRES     => {
         'PDL' => 2.006,
         'Test::More' => 0,
         'Test::Number::Delta' => 0,
+        'Alien::TALib' => 0.06,
   },
   CONFIGURE_REQUIRES => {
         'PDL' => 2.006,
+        'Alien::TALib' => 0.06,
   },
-  META_MERGE   => { 
+  META_MERGE   => {
       resources    => {
           repository   => 'https://github.com/kmx/pdl-finance-talib',
       },
   },
   dist => {
+      ($^O eq 'MSWin32' ? (TAR => 'ptar', TARFLAGS => '-c -C -f') : ()),
       PREOP => '$(MKPATH) $(DISTVNAME)/GENERATED'
                . ' && $(PERL) "-MPDL::PP qw[PDL::Finance::Talib PDL::Finance::Talib $(DISTVNAME)/GENERATED/Talib]" Talib.pd'
                . ' && $(RM_F) $(DISTVNAME)/GENERATED/*.xs'
