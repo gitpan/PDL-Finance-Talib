@@ -1,5 +1,0 @@
-### missing TA Lib function
-
-TA_SetUnstablePeriod    TA_GetUnstablePeriod
-TA_SetCompatibility     TA_GetCompatibility
-TA_SetCandleSettings    TA_RestoreCandleDefaultSettings

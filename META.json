@@ -22,22 +22,20 @@
    "prereqs" : {
       "build" : {
          "requires" : {
-            "Alien::TALib" : "0.06",
             "PDL" : "2.006",
-            "Test::More" : "0",
-            "Test::Number::Delta" : "0"
+            "PDL::Finance::TA" : "0.008"
          }
       },
       "configure" : {
          "requires" : {
-            "Alien::TALib" : "0.06",
-            "PDL" : "2.006"
+            "PDL" : "2.006",
+            "PDL::Finance::TA" : "0.008"
          }
       },
       "runtime" : {
          "requires" : {
-            "Alien::TALib" : "0.06",
-            "PDL" : "2.006"
+            "PDL" : "2.006",
+            "PDL::Finance::TA" : "0.008"
          }
       }
    },
@@ -47,5 +45,5 @@
          "url" : "https://github.com/kmx/pdl-finance-talib"
       }
    },
-   "version" : "0.007"
+   "version" : "0.008"
 }

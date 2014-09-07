@@ -1,5 +1,8 @@
 Changes for PDL::Finance::Talib
 
+0.008   2014/09/07
+        - DEPRECATED: use PDL::Finance::TA
+
 0.007   2014/09/02
         - use Alien::TALib for ta-lib detection
 
