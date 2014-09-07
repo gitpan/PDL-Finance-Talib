@@ -24,4 +24,4 @@ requires:
   PDL::Finance::TA: 0.008
 resources:
   repository: https://github.com/kmx/pdl-finance-talib
-version: 0.008
+version: 0.009

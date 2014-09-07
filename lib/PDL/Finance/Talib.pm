@@ -1,9 +1,9 @@
-use strict;
+package PDL::Finance::Talib;
 
 use strict;
 use warnings;
 
-our $VERSION = "0.008";
+our $VERSION = "0.009";
 
 sub import {
   eval 'use PDL::Finance::TA;'
